@@ -1,4 +1,4 @@
-# :file_folder: tslint-folders-diagrams
+# :open_file_folder: tslint-folders-diagrams
 
 Generate architecture diagrams from the folder configuration of tslint-folders.
 
