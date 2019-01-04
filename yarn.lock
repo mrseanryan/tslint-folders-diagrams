@@ -8245,6 +8245,13 @@ tslint-eslint-rules@^5.3.1:
     tslib "1.9.0"
     tsutils "^3.0.0"
 
+tslint-folders@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/tslint-folders/-/tslint-folders-2.0.0.tgz#e031d47ff57822c7a215f0d6327e03e1a54f47a0"
+  integrity sha512-1HO1/d/LVPpi8JV4KHJr1FvBG8s/5eAUQ3aCS71nzIxLclokcWGSF1F8VIPoCWuKlMues8Ahk/ZBkjoQ50yk9Q==
+  dependencies:
+    lodash "^4.17.11"
+
 tslint@^5.12.0:
   version "5.12.0"
   resolved "https://registry.yarnpkg.com/tslint/-/tslint-5.12.0.tgz#47f2dba291ed3d580752d109866fb640768fca36"

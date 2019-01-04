@@ -1,7 +1,5 @@
-import { ImportsBetweenPackagesRuleConfig } from "../../../model/ImportsBetweenPackagesRuleConfig";
-import { DocConfig } from "../Config";
-import { IDocOutputter } from "./IDocOutputter";
+import { ImportsBetweenPackagesRuleConfig } from "tslint-folders";
 
 export interface IDocGenerator {
-  generateDoc(packageConfig: ImportsBetweenPackagesRuleConfig): void;
+    generateDoc(packageConfig: ImportsBetweenPackagesRuleConfig): void;
 }

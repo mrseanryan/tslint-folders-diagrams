@@ -57,10 +57,10 @@ yarn add tslint-folders-diagrams
 
 ### 2 Generate a summary of the package configuration
 
-Assuming that `tslint.tslint-folders-diagrams.json` (from [tslint-folders](https://github.com/mrseanryan/tslint-folders)) has been correctly configured to model the expected package structure, then you can run this command to generate a summary:
+Assuming that [tslint.tslint-folders.json](./tslint.tslint-folders.json) (from [tslint-folders](https://github.com/mrseanryan/tslint-folders)) has been correctly configured to model the expected package structure, then you can run this command to generate a summary:
 
 ```
-node node_modules/tslint-folders-diagrams/dist/lib/tools/docsGenerator tslint.tslint-folders-diagrams.json Text
+node node_modules/tslint-folders-diagrams/dist/lib/tools/docsGenerator tslint.tslint-folders.json Text
 ```
 
 example output:

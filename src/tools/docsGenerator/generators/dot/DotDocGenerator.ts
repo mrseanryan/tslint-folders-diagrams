@@ -1,8 +1,5 @@
-import {
-    ImportsBetweenPackagesRuleConfig,
-    PackageFolder,
-    PackageSubFolder
-} from "../../../../model/ImportsBetweenPackagesRuleConfig";
+import { ImportsBetweenPackagesRuleConfig, PackageFolder, PackageSubFolder } from "tslint-folders";
+
 import { DocConfig } from "../../Config";
 import { Edge } from "../../graph/Edge";
 import { GraphCluster } from "../../graph/GraphCluster";

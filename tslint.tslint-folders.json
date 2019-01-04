@@ -1,54 +1,6 @@
 {
-    "rulesDirectory": "./dist/lib/",
+    "rulesDirectory": "./node_modules/tslint-folders/dist/lib/",
     "rules": {
-        "tsf-folders-disabled-test": [
-            true,
-            {
-                "ban": [
-                    "it.only",
-                    "it.skip",
-                    "describe.only",
-                    "describe.skip",
-                    "fdescribe",
-                    "fit",
-                    "xit",
-                    "xdescribe"
-                ],
-                "includePaths": [
-                    ".spec.ts",
-                    ".spec.tsx",
-                    ".ispec.ts",
-                    ".ispec.tsx",
-                    ".spec.karma.tsx"
-                ]
-            }
-        ],
-        "tsf-folders-import-from-disallowed-folders": [
-            true,
-            {
-                "disallowed": [
-                    "/dist/lib/",
-                    "/dist",
-                    "/node_modules/",
-                    "/node_modules",
-                    "mobx/lib/mobx"
-                ]
-            }
-        ],
-        "tsf-folders-test-with-breakpoint": [
-            true,
-            {
-                "debugTokens": ["browser.debug"],
-                "includePaths": [".spec.ts", ".spec.tsx", ".ispec.ts", ".ispec.tsx"]
-            }
-        ],
-        "tsf-folders-file-names": [
-            true,
-            {
-                "file-name-casing": ["camel-case", "pascal-case", "kebab-case"],
-                "ignorePaths": []
-            }
-        ],
         "tsf-folders-imports-between-packages": [
             true,
             {

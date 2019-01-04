@@ -45,7 +45,7 @@
             }
         },
         "collectCoverageFrom": [
-            "src/*.{js,ts}"
+            "tslint-folders-diagrams.{ts}"
         ],
         "testPathIgnorePatterns": [
             "/testHarness/",
@@ -130,17 +130,18 @@
         "travis-deploy-once": "travis-deploy-once",
         "prepush": "npm run test:prod",
         "docs": "node dist/lib/tools/docsGenerator/",
-        "docs:test": " node dist/lib/tools/docsGenerator/ ./tslint.tslint-folders-diagrams.json Text",
-        "docs:test-no-subfolders": " node dist/lib/tools/docsGenerator/ ./tslint.tslint-folders-diagrams.json Text -skipSubFolders",
-        "docs:test-dot": " node dist/lib/tools/docsGenerator/ ./tslint.tslint-folders-diagrams.json Dot",
-        "docs:test-dot-no-subfolders": " node dist/lib/tools/docsGenerator/ ./tslint.tslint-folders-diagrams.json Dot -skipSubFolders"
+        "docs:test": " node dist/lib/tools/docsGenerator/ ./tslint.tslint-folders.json Text",
+        "docs:test-no-subfolders": " node dist/lib/tools/docsGenerator/ ./tslint.tslint-folders.json Text -skipSubFolders",
+        "docs:test-dot": " node dist/lib/tools/docsGenerator/ ./tslint.tslint-folders.json Dot",
+        "docs:test-dot-no-subfolders": " node dist/lib/tools/docsGenerator/ ./tslint.tslint-folders.json Dot -skipSubFolders"
     },
     "repository": {
         "type": "git",
         "url": "https://github.com/mrseanryan/tslint-folders-diagrams.git"
     },
     "dependencies": {
-        "lodash": "^4.17.11"
+        "lodash": "^4.17.11",
+        "tslint-folders": "^2.0.0"
     },
     "keywords": [
         "tslint",

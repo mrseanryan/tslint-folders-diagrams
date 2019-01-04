@@ -1,5 +1,5 @@
 {
-    "extends": "./tslint.tslint-folders-diagrams.json",
+    "extends": ["tslint-config-standard-sr", "tslint-config-prettier"],
     "rules": {
         // configured already in tslint-config-standard-sr
     }
