@@ -4,8 +4,8 @@
 
 TEMP_OUT_DIR=`mktemp -d 2>/dev/null || mktemp -d -t 'temp'`
 
-OUT_DOT_PATH=$TEMP_OUT_DIR/tslint-folders-docs.dot;
-OUT_IMAGE_PATH=$TEMP_OUT_DIR/tslint-folders-docs.svg;
+OUT_DOT_PATH=$TEMP_OUT_DIR/tslint-folders-diagrams-docs.dot;
+OUT_IMAGE_PATH=$TEMP_OUT_DIR/tslint-folders-diagrams-docs.svg;
 
 PATH_TO_TSLINT_JSON=$1;
 

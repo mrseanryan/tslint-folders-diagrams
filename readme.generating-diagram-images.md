@@ -1,14 +1,14 @@
 # generating diagrams of the architecture described in tslint.json
 
-The configuration of `tslint-folders` is a description of the architecture of your TypeScript project (see [tslint.tslint-folders.json](https://bitbucket.org/str/tslint-folders/src/master/tslint.tslint-folders.json) for an example).
+The configuration of `tslint-folders-diagrams` is a description of the architecture of your TypeScript project (see [tslint.tslint-folders-diagrams.json](https://github.com/mrseanryan/tslint-folders-diagrams/blob/master/tslint.tslint-folders-diagrams.json) for an example).
 
-`tslint-folders` can generate dot files from its configuration. A dot file is a simple format to describe a graph of nodes.
+`tslint-folders-diagrams` can generate dot files from its configuration. A dot file is a simple format to describe a graph of nodes.
 
 If you install `graphviz`, then you can generate image diagrams from those dot files.
 
-So, you can automatically generate architecture diagrams from the same configuration that `tslint-folders` uses to validate the source code.
+So, you can automatically generate architecture diagrams from the same configuration that `tslint-folders-diagrams` uses to validate the source code.
 
-![example diagram](https://bitbucket.org/str/tslint-folders/raw/f9c220af572d72f8dc4024d02582cf2b03b15552/static/images/example_diagram_from_Dot_output-2.svg)
+![example diagram](https://github.com/mrseanryan/tslint-folders-diagrams/blob/master/static/images/example_diagram_from_Dot_output.png?raw=true)
 
 _note: the example scripts output SVG files which are scalable and work with markdown and so work with gitlab, npmjs etc._
 
@@ -20,7 +20,7 @@ https://graphviz.gitlab.io
 
 ---
 
-## generating a graph image from tslint-folders
+## generating a graph image from tslint-folders-diagrams
 
 `./generate_graph_image <path to tslint.json>`
 
@@ -30,8 +30,8 @@ https://graphviz.gitlab.io
 
 ## assumptions
 
-- graphviz has been installed and 'dot' is available at the command line.
-- the machine has an environment variable `TEMP` pointing to a temporary files location.
+-   graphviz has been installed and 'dot' is available at the command line.
+-   the machine has an environment variable `TEMP` pointing to a temporary files location.
 
 ---
 
@@ -53,7 +53,7 @@ So then `dot.exe` is reachable.
 
 ### executing bash scripts on Windows
 
-- use cmder (bash)
+-   use cmder (bash)
 
 http://cmder.net/
 

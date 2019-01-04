@@ -235,9 +235,9 @@ tslib@^1.8.0, tslib@^1.8.1:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
   integrity sha512-4krF8scpejhaOgqzBEcGM7yDIEfi0/8+8zDRZhNZZ2kjmHJ4hv3zCbQWxoJGz1iw5U0Jl0nma13xzHXcncMavQ==
 
-tslint-folders@^0.4.17:
+tslint-folders-diagrams@^0.4.17:
   version "0.4.17"
-  resolved "https://registry.yarnpkg.com/tslint-folders/-/tslint-folders-0.4.17.tgz#833066c99edbb4d26243ea9fa436c2e31a65be46"
+  resolved "https://registry.yarnpkg.com/tslint-folders-diagrams/-/tslint-folders-diagrams-0.4.17.tgz#833066c99edbb4d26243ea9fa436c2e31a65be46"
   integrity sha512-WldvmzIIRlc6yViM0/EFFh1fFvXVivNTzNvZKzMFtICv4haw2OLFtMT+/4d822bIzwQ8yDvyEugjgBfZ/kCNNA==
 
 tslint@^5.9.1:

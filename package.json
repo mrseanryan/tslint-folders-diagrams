@@ -1,9 +1,9 @@
 {
-    "name": "tslint-folders",
+    "name": "tslint-folders-diagrams",
     "version": "0.0.0-semantically-released",
-    "description": "Custom TSLint rules for checking imports between packages and their folders, and generating relevant diagrams.",
-    "main": "dist/tslint-folders.umd.js",
-    "typings": "dist/types/tslint-folders.d.ts",
+    "description": "Generate architecture diagrams from the folder configuration of tslint-folders-diagrams.",
+    "main": "dist/tslint-folders-diagrams.umd.js",
+    "typings": "dist/types/tslint-folders-diagrams.d.ts",
     "files": [
         "dist"
     ],
@@ -130,14 +130,14 @@
         "travis-deploy-once": "travis-deploy-once",
         "prepush": "npm run test:prod",
         "docs": "node dist/lib/tools/docsGenerator/",
-        "docs:test": " node dist/lib/tools/docsGenerator/ ./tslint.tslint-folders.json Text",
-        "docs:test-no-subfolders": " node dist/lib/tools/docsGenerator/ ./tslint.tslint-folders.json Text -skipSubFolders",
-        "docs:test-dot": " node dist/lib/tools/docsGenerator/ ./tslint.tslint-folders.json Dot",
-        "docs:test-dot-no-subfolders": " node dist/lib/tools/docsGenerator/ ./tslint.tslint-folders.json Dot -skipSubFolders"
+        "docs:test": " node dist/lib/tools/docsGenerator/ ./tslint.tslint-folders-diagrams.json Text",
+        "docs:test-no-subfolders": " node dist/lib/tools/docsGenerator/ ./tslint.tslint-folders-diagrams.json Text -skipSubFolders",
+        "docs:test-dot": " node dist/lib/tools/docsGenerator/ ./tslint.tslint-folders-diagrams.json Dot",
+        "docs:test-dot-no-subfolders": " node dist/lib/tools/docsGenerator/ ./tslint.tslint-folders-diagrams.json Dot -skipSubFolders"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/mrseanryan/tslint-folders.git"
+        "url": "https://github.com/mrseanryan/tslint-folders-diagrams.git"
     },
     "dependencies": {
         "lodash": "^4.17.11"

@@ -7,7 +7,7 @@ import typescript from "rollup-plugin-typescript2";
 
 const pkg = require("./package.json");
 
-const libraryName = "tslint-folders";
+const libraryName = "tslint-folders-diagrams";
 
 export default {
     input: `src/${libraryName}.ts`,

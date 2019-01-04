@@ -1,7 +1,7 @@
 import * as Lint from "tslint";
 
 import { RuleId } from "../../src/RuleId";
-import * as Rules from "../../src/tslint-folders";
+import * as Rules from "../../src/tslint-folders-diagrams";
 
 export namespace RuleFactory {
     export function createRuleForTestDirectoryPath(

@@ -1,7 +1,7 @@
 {
   "name": "simple-typescript-project",
   "version": "0.0.1",
-  "description": "A test harness for tslint-folders to test consuming the package.",
+  "description": "A test harness for tslint-folders-diagrams to test consuming the package.",
   "main": "index.js",
   "scripts": {
     "lint": "yarn tslint --project tsconfig.json --format msbuild",
@@ -11,7 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "tslint": "^5.9.1",
-    "tslint-folders": "^0.4.17",
+    "tslint-folders-diagrams": "^0.4.17",
     "typescript": "^2.9.2"
   },
   "private": true

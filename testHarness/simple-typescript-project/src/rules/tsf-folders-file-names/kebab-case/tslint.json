@@ -8,5 +8,5 @@
       }
     ]
   },
-  "rulesDirectory": "../../../../node_modules/tslint-folders/dist/lib/"
+  "rulesDirectory": "../../../../node_modules/tslint-folders-diagrams/dist/lib/"
 }
