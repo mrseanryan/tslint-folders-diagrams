@@ -7,7 +7,10 @@ Generate architecture diagrams from the folder configuration of tslint-folders.
 tslint-folders-diagrams is stable and in use every day in CI builds and on dev boxes (Linux, Mac, Windows) for at least one major product.
 
 [![Travis](https://img.shields.io/travis/mrseanryan/tslint-folders-diagrams.svg)](https://travis-ci.org/mrseanryan/tslint-folders-diagrams)
-[![Coveralls](https://img.shields.io/coveralls/mrseanryan/tslint-folders-diagrams.svg)](https://coveralls.io/github/mrseanryan/tslint-folders-diagrams)
+
+<!-- TODO add unit tests! -->
+<!-- [![Coveralls](https://img.shields.io/coveralls/mrseanryan/tslint-folders-diagrams.svg)](https://coveralls.io/github/mrseanryan/tslint-folders-diagrams) -->
+
 [![install size](https://packagephobia.now.sh/badge?p=tslint-folders-diagrams)](https://packagephobia.now.sh/result?p=tslint-folders-diagrams)
 
 [![Dependencies](https://david-dm.org/mrseanryan/tslint-folders-diagrams.svg)](https://david-dm.org/mrseanryan/tslint-folders-diagrams)

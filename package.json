@@ -49,7 +49,7 @@
             }
         },
         "collectCoverageFrom": [
-            "tslint-folders-diagrams.{ts}"
+            "src/tslint-folders-diagrams.{js,ts}"
         ],
         "testPathIgnorePatterns": [
             "/testHarness/",
@@ -120,10 +120,10 @@
         "semantic-release": "semantic-release",
         "semantic-release-prepare": "ts-node tools/semantic-release-prepare",
         "docs": "node dist/lib/tools/docsGenerator/",
-        "docs:test": " node dist/lib/tools/docsGenerator/ ./tslint.tslint-folders.json Text",
-        "docs:test-no-subfolders": " node dist/lib/tools/docsGenerator/ ./tslint.tslint-folders.json Text -skipSubFolders",
-        "docs:test-dot": " node dist/lib/tools/docsGenerator/ ./tslint.tslint-folders.json Dot",
-        "docs:test-dot-no-subfolders": " node dist/lib/tools/docsGenerator/ ./tslint.tslint-folders.json Dot -skipSubFolders"
+        "docs:test": "node dist/lib/tools/docsGenerator/ ./tslint.tslint-folders.json Text",
+        "docs:test-no-subfolders": "node dist/lib/tools/docsGenerator/ ./tslint.tslint-folders.json Text -skipSubFolders",
+        "docs:test-dot": "node dist/lib/tools/docsGenerator/ ./tslint.tslint-folders.json Dot",
+        "docs:test-dot-no-subfolders": "node dist/lib/tools/docsGenerator/ ./tslint.tslint-folders.json Dot -skipSubFolders"
     },
     "repository": {
         "type": "git",
