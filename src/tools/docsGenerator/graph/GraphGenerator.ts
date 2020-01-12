@@ -111,7 +111,7 @@ export class GraphGenerator {
                     "",
                     ClusterType.DiagramCluster
                 );
-                this.mapIdToNode.add(cluster);
+                this.mapIdToNode.add(subCluster);
 
                 nodes.push(subCluster);
 
