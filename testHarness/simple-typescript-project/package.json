@@ -11,7 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "tslint": "^5.9.1",
-    "tslint-folders-diagrams": "^0.4.17",
+    "tslint-folders-diagrams": "^2.0.1",
     "typescript": "^2.9.2"
   },
   "private": true
