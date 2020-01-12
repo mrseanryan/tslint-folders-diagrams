@@ -1,5 +1,5 @@
 {
-    "rulesDirectory": "node_modules/tslint-folders-diagrams/dist/lib",
+    "rulesDirectory": "node_modules/tslint-folders/dist/lib",
     "rules": {
         "tsf-folders-disabled-test": [
             true,
