@@ -44,7 +44,7 @@ Automatically create up-to-date architecture diagrams from the same config as us
 
 ## versioning
 
-We use [SemVer](https://semver.org) for versioning. For the versions available, see the tags on this repository.
+We use [SemVer](https://semver.org) for versioning. For the versions available, see [Releases](https://github.com/mrseanryan/tslint-folders-diagrams/releases).
 
 ---
 
