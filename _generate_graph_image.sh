@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# stop on first error:
+set -e
+
 # assumption: the machine has an environment variable TEMP pointing to a temporary files location.
 
 TEMP_OUT_DIR=`mktemp -d 2>/dev/null || mktemp -d -t 'temp'`

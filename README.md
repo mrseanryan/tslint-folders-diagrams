@@ -151,6 +151,16 @@ The following options are specific to the `Dot` output format:
 | subTitle                    | Set the sub-title of the diagram.                                                                                                                                                                                                                                            | `-subTitle="Top-level Packages"` |
 | title                       | Set the title of the diagram.                                                                                                                                                                                                                                                | `-title="Project Packages"`      |
 
+### examples
+
+For working examples, see the following scripts:
+
+| Script                                        | Description                                                                                            |
+| --------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| `./generate_graph_image_example.sh`           | Basic example that generates an image from the example configuration (`./tslint.tslint-folders.json`). |
+| `./generate_graph_image_example_shapes.sh`    | Uses different kinds of shapes to draw the packages and sub-folders.                                   |
+| `./generate_graph_image_optimized_example.sh` | Uses optimization options to simplify the diagram.                                                     |
+
 ---
 
 ## sites
@@ -202,4 +212,4 @@ Original work by Sean Ryan - mr.sean.ryan(at gmail.com)
 
 ## licence = MIT
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/mrseanryan/tslint-folders-diagrams/blob/master/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/mrseanryan/tslint-folders-diagrams/blob/master/LICENSE) file for details.
