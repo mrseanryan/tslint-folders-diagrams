@@ -1,0 +1,38 @@
+_____
+shell - Application Shell
+  --> (any)
+  
+todo-area - TODO Area Package
+  --> grid-package, utils, thirdPartySdk
+    folders:
+      components - UI components
+        --> (any)
+      
+      viewmodels - View models used by the UI
+        --> models, utils
+      
+      models - Models used by the view models
+        --> utils
+      
+      utils - general utils
+        --> (none)
+      
+contact-area - Area that shows contact details
+  --> grid-package, utils, thirdPartySdk
+  
+grid-package - Grid Package with no dependencies
+  --> thirdPartySdk
+    folders:
+      components - UI components that compose the grid
+        --> (any)
+      
+      models - Models used by the UI components
+        --> utils
+      
+      utils - general utils
+        --> (none)
+      
+utils - Utils package
+  --> (none)
+  
+_____
