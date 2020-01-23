@@ -45,7 +45,7 @@ export class GraphGenerator {
             ClusterType.TopLevel
         );
 
-        if (this.config.skipSubFolders) {
+        if (!this.config.disableTopCluster) {
             this.root.nodes.push(topLevelCluster);
         }
 
@@ -181,13 +181,11 @@ export class GraphGenerator {
         );
         this.mapIdToNode.add(cluster);
 
-        const nodes = this.generateSubFolders(
-            cluster,
-            pkg.importPath,
-            pkg.subFolders.filter(sub => this.filter.isImportPathOkForSubFolder(sub))
-        );
+        if (this.filter.isImportPathOkForSubFolder()) {
+            const nodes = this.generateSubFolders(cluster, pkg.importPath, pkg.subFolders);
 
-        cluster.nodes.push(...nodes);
+            cluster.nodes.push(...nodes);
+        }
 
         this.root.nodes.push(cluster);
     }
@@ -231,35 +229,36 @@ export class GraphGenerator {
 
             this.processEdgesForPackageNames(thisPkgId, allowedPackages);
 
+            if (!this.filter.isImportPathOkForSubFolder()) {
+                return;
+            }
+
             // TODO review - kind of duplicate code - could have interface across PackageFolder, PackageSubFolder ?
-            pkg.subFolders
-                .filter(sub => this.filter.isImportPathOkForSubFolder(sub))
-                .forEach(subFolder => {
-                    const thisSubFolderId = this.mapNameToId.getId(
-                        this.getPackageIdKey(subFolder.importPath, pkg.importPath)
-                    );
+            pkg.subFolders.forEach(subFolder => {
+                const thisSubFolderId = this.mapNameToId.getId(
+                    this.getPackageIdKey(subFolder.importPath, pkg.importPath)
+                );
 
-                    let allowedSubFolders = subFolder.allowedToImport;
-                    if (allowedSubFolders.some(allowed => allowed === "*")) {
-                        if (this.config.dot.showImportAnyAsNodeNotEdges) {
-                            allowedSubFolders = [this.getAnyPackageId()];
-                        } else {
-                            allowedSubFolders = pkg.subFolders
-                                .filter(
-                                    // disallow import from self
-                                    otherSubFolder =>
-                                        otherSubFolder.importPath !== subFolder.importPath
-                                )
-                                .map(sub => sub.importPath);
-                        }
+                let allowedSubFolders = subFolder.allowedToImport;
+                if (allowedSubFolders.some(allowed => allowed === "*")) {
+                    if (this.config.dot.showImportAnyAsNodeNotEdges) {
+                        allowedSubFolders = [this.getAnyPackageId()];
+                    } else {
+                        allowedSubFolders = pkg.subFolders
+                            .filter(
+                                // disallow import from self
+                                otherSubFolder => otherSubFolder.importPath !== subFolder.importPath
+                            )
+                            .map(sub => sub.importPath);
                     }
+                }
 
-                    this.processEdgesForSubFolderNames(
-                        thisSubFolderId,
-                        allowedSubFolders,
-                        pkg.importPath
-                    );
-                });
+                this.processEdgesForSubFolderNames(
+                    thisSubFolderId,
+                    allowedSubFolders,
+                    pkg.importPath
+                );
+            });
         });
     }
 

@@ -33,6 +33,66 @@ digraph packages {
   edge [arrowhead="vee", arrowtail="vee", style=dashed, color="black"]
   
   /* Nodes and Clusters ================================= */
+  subgraph cluster_C1 {
+    labelloc = t
+    
+    node [shape="octagon"]
+    label = "Top-level Packages (sub-title)"
+    {
+    P1 [label="shell
+Application Shell" fillcolor=1]
+    }
+    
+    
+    {
+    node [style=dashed]
+    P6 [label="thirdPartySdk
+Third party SDK" fillcolor=2]
+    }
+    
+    
+    subgraph cluster_CO1_1 {
+      labelloc = t
+      
+      color = gray
+      style=dashed
+      label = ""
+      {
+      P2 [label="todo-area
+TODO Area Package" fillcolor=3]
+      }
+      
+      
+      {
+      P3 [label="contact-area
+Area that shows contact details" fillcolor=4]
+      }
+      
+      
+    }
+    
+    subgraph cluster_CO1_4 {
+      labelloc = t
+      
+      color = gray
+      style=dashed
+      label = ""
+      {
+      P4 [label="grid-package
+Grid Package with no dependencies" fillcolor=5]
+      }
+      
+      
+      {
+      P5 [label="utils
+Utils package" fillcolor=6]
+      }
+      
+      
+    }
+    
+  }
+  
   subgraph cluster_C2 {
     labelloc = t
     
@@ -40,25 +100,25 @@ digraph packages {
     label = "todo-area - TODO Area Package"
     {
     P7 [label="components
-UI components" fillcolor=1]
+UI components" fillcolor=7]
     }
     
     
     {
     P8 [label="viewmodels
-View models used by the UI" fillcolor=2]
+View models used by the UI" fillcolor=8]
     }
     
     
     {
     P9 [label="models
-Models used by the view models" fillcolor=3]
+Models used by the view models" fillcolor=9]
     }
     
     
     {
     P10 [label="utils
-general utils" fillcolor=4]
+general utils" fillcolor=1]
     }
     
     
@@ -71,19 +131,19 @@ general utils" fillcolor=4]
     label = "grid-package - Grid Package with no dependencies"
     {
     P11 [label="components
-UI components that compose the grid" fillcolor=5]
+UI components that compose the grid" fillcolor=2]
     }
     
     
     {
     P12 [label="models
-Models used by the UI components" fillcolor=6]
+Models used by the UI components" fillcolor=3]
     }
     
     
     {
     P13 [label="utils
-general utils" fillcolor=7]
+general utils" fillcolor=4]
     }
     
     
@@ -91,6 +151,12 @@ general utils" fillcolor=7]
   
   
   /* Edges ================================= */
+  P1-> P6 [label=" " ]
+  P1-> P2 [label=" "  lhead=cluster_CO1_1]
+  P1-> P4 [label=" "  lhead=cluster_CO1_4]
+  P4-> P6 [label=" " ]
+  P2-> P6 [label=" "  ltail=cluster_CO1_1]
+  P2-> P4 [label=" "  lhead=cluster_CO1_4 ltail=cluster_CO1_1]
   P7-> P8 [label=" " ]
   P7-> P9 [label=" " ]
   P7-> P10 [label=" " ]

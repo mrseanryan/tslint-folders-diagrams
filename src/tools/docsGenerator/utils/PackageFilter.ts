@@ -33,10 +33,6 @@ export class PackageFilter {
         return this.whiteListPaths.length === 0 || this.whiteListPaths.includes(importPath);
     }
 
-    get hasWhitelist(): boolean {
-        return this.whiteListPaths.length > 0;
-    }
-
     canOutputSubfoldersOf(folder: PackageFolder): boolean {
         return this.passesBlackAndWhitelist(folder.importPath);
     }
@@ -49,8 +45,7 @@ export class PackageFilter {
         return this.isImportPathOkForFolder(folder) && this.passesWhitelist(folder.importPath);
     }
 
-    isImportPathOkForSubFolder(folder: PackageSubFolder): boolean {
-        // xxx dead param
+    isImportPathOkForSubFolder(): boolean {
         // black/white lists do not apply to sub-folders
         return !this.skipSubFolders;
     }

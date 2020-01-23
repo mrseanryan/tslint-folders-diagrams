@@ -1,7 +1,7 @@
 import { ImportsBetweenPackagesRuleConfig, PackageFolder, PackageSubFolder } from "tslint-folders";
 
-import { IDocGenerator } from "../../interfaces/IDocGenerator";
 import { DocGeneratorBase } from "../shared/DocGeneratorBase";
+import { IDocGenerator } from "../../interfaces/IDocGenerator";
 
 const SECTION_SEPARATOR = "_____";
 
@@ -20,9 +20,9 @@ export class TextDocGenerator extends DocGeneratorBase implements IDocGenerator 
 
                 this.outputAllowedImports(pkg);
 
-                this.outputSubFolders(
-                    pkg.subFolders.filter(sub => this.filter.isImportPathOkForSubFolder(sub))
-                );
+                if (this.filter.isImportPathOkForSubFolder()) {
+                    this.outputSubFolders(pkg.subFolders);
+                }
 
                 this.outputter.decreaseIndent();
             });

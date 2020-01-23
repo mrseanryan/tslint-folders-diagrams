@@ -131,6 +131,7 @@ The general options are:
 
 | Option          | Description                                                                          | Example                                |
 | --------------- | ------------------------------------------------------------------------------------ | -------------------------------------- |
+| disableTopCluster | Disable the automatically added top-level cluster (group). Helps if only the sub-folders are of interest. | `-disableTopCluster` |
 | help            | Shows the usage text.                                                                | `-help` or `-h`                        |
 | importBlacklist | Exclude these top-level packages from the diagram. Helps to simplify the diagram.    | `-importBlacklist=package-1,package-2` |
 | importWhitelist | Include only these top-level packages in the diagram. Helps to simplify the diagram. | `-importWhitelist=package-1,package-2` |

@@ -1,5 +1,5 @@
-import { DocConfig } from "../Config";
 import { ConfigDefaults } from "../ConfigDefaults";
+import { DocConfig } from "../Config";
 import { EnumUtils } from "./EnumUtils";
 
 const NUM_MANDATORY_ARGS = 4;
@@ -80,6 +80,9 @@ export namespace ArgsParser {
                     break;
                 case "-disableGraphOptimizer":
                     config.dot.isGraphOptimizerEnabled = false;
+                    break;
+                case "-disableTopCluster":
+                    config.disableTopCluster = true;
                     break;
                 case "-h":
                 case "-help":
