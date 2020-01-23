@@ -67,6 +67,7 @@
                             {
                                 "description": "Grid Package with no dependencies",
                                 "importPath": "grid-package",
+                                "diagramCluster": "grid-package-and-thirdparty",
                                 "allowedToImport": ["thirdPartySdk"],
                                 "subFolders": [
                                     {
@@ -97,6 +98,7 @@
                                 "importPath": "thirdPartySdk",
                                 "isExternal": true,
                                 "allowedToImport": [],
+                                "diagramCluster": "grid-package-and-thirdparty",
                                 "subFolders": []
                             }
                         ]
