@@ -12,7 +12,7 @@
 <g id="clust1" class="cluster">
 <title>cluster_C1</title>
 <polygon fill="#ffffff" stroke="#000000" points="8,-8 8,-442.2203 700,-442.2203 700,-8 8,-8"/>
-<text text-anchor="middle" x="354" y="-427.0203" font-family="Times,serif" font-size="14.00" fill="#000000">Top Level Packages</text>
+<text text-anchor="middle" x="354" y="-427.0203" font-family="Times,serif" font-size="14.00" fill="#000000">Top&#45;level Packages</text>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_C2</title>

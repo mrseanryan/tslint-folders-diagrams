@@ -1,13 +1,13 @@
-import { groupBy } from "lodash";
+import { ClusterType, GraphCluster } from "./GraphCluster";
+import { GraphNode, NodeType } from "./GraphNode";
 import { ImportsBetweenPackagesRuleConfig, PackageFolder, PackageSubFolder } from "tslint-folders";
 
 import { DocConfig } from "../Config";
+import { Edge } from "./Edge";
+import { MapIdToGraphNode } from "./utils/MapIdToGraphNode";
 import { MapNameToId } from "../generators/dot/utils/MapNameToId";
 import { PackageFilter } from "../utils/PackageFilter";
-import { Edge } from "./Edge";
-import { ClusterType, GraphCluster } from "./GraphCluster";
-import { GraphNode, NodeType } from "./GraphNode";
-import { MapIdToGraphNode } from "./utils/MapIdToGraphNode";
+import { groupBy } from "lodash";
 
 /**
  * Generate a graph that represents the structure described in the tslint config.
@@ -40,7 +40,7 @@ export class GraphGenerator {
         const topLevelCluster = GraphCluster.create(
             this.root,
             this.containerId++,
-            "Top Level Packages",
+            this.config.dot.subTitle,
             "",
             ClusterType.TopLevel
         );
