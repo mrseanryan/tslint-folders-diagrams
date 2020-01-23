@@ -1,0 +1,14 @@
+_____
+shell - Application Shell
+  --> (any)
+  
+todo-area - TODO Area Package
+  --> grid-package, utils, thirdPartySdk
+  
+contact-area - Area that shows contact details
+  --> grid-package, utils, thirdPartySdk
+  
+utils - Utils package
+  --> (none)
+  
+_____

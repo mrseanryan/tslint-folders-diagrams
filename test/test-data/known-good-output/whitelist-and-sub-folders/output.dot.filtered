@@ -4,7 +4,7 @@ digraph packages {
   graph [
     // needed to allow edge to have *cluster* as a destination:
     compound=true
-    label = "importBlacklist is utils"
+    label = "todo-area (title)"
     labelloc = t
     
     //dpi = 200
@@ -33,71 +33,32 @@ digraph packages {
   edge [arrowhead="vee", arrowtail="vee", style=dashed, color="black"]
   
   /* Nodes and Clusters ================================= */
-  subgraph cluster_C3 {
+  subgraph cluster_C2 {
     labelloc = t
     
     node [shape="folder"]
     label = "todo-area - TODO Area Package"
     {
-    P7 [label="components
+    P2 [label="components
 UI components" fillcolor=1]
     }
     
     
     {
-    P8 [label="viewmodels
+    P3 [label="viewmodels
 View models used by the UI" fillcolor=2]
     }
     
     
     {
-    P9 [label="models
+    P4 [label="models
 Models used by the view models" fillcolor=3]
     }
     
     
     {
-    P10 [label="utils
+    P5 [label="utils
 general utils" fillcolor=4]
-    }
-    
-    
-    {
-    node [style=dashed]
-    P11 [label="*
-(can import any folders)" fillcolor=5]
-    }
-    
-    
-  }
-  
-  subgraph cluster_C4 {
-    labelloc = t
-    
-    node [shape="folder"]
-    label = "grid-package - Grid Package with no dependencies"
-    {
-    P12 [label="components
-UI components that compose the grid" fillcolor=6]
-    }
-    
-    
-    {
-    P13 [label="models
-Models used by the UI components" fillcolor=7]
-    }
-    
-    
-    {
-    P14 [label="utils
-general utils" fillcolor=8]
-    }
-    
-    
-    {
-    node [style=dashed]
-    P15 [label="*
-(can import any folders)" fillcolor=9]
     }
     
     
@@ -105,11 +66,11 @@ general utils" fillcolor=8]
   
   
   /* Edges ================================= */
-  P7-> P11 [label=" " ]
-  P8-> P9 [label=" " ]
-  P8-> P10 [label=" " ]
-  P9-> P10 [label=" " ]
-  P12-> P15 [label=" " ]
-  P13-> P14 [label=" " ]
+  P2-> P3 [label=" " ]
+  P2-> P4 [label=" " ]
+  P2-> P5 [label=" " ]
+  P3-> P4 [label=" " ]
+  P3-> P5 [label=" " ]
+  P4-> P5 [label=" " ]
   
 }

@@ -36,7 +36,7 @@ digraph packages {
   subgraph cluster_C2 {
     labelloc = t
     
-    node [shape="folder"]
+    node [shape="component"]
     label = "todo-area - TODO Area Package"
     {
     P7 [label="components
@@ -67,7 +67,7 @@ general utils" fillcolor=4]
   subgraph cluster_C3 {
     labelloc = t
     
-    node [shape="folder"]
+    node [shape="component"]
     label = "grid-package - Grid Package with no dependencies"
     {
     P11 [label="components

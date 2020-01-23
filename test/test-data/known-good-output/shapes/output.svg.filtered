@@ -22,14 +22,18 @@
 <!-- P7 -->
 <g id="node1" class="node">
 <title>P7</title>
-<polygon fill="#fbb4ae" stroke="#000000" points="298.5,-507 295.5,-511 274.5,-511 271.5,-507 197.5,-507 197.5,-469 298.5,-469 298.5,-507"/>
+<polygon fill="#fbb4ae" stroke="#000000" points="298.5,-507 197.5,-507 197.5,-503 193.5,-503 193.5,-499 197.5,-499 197.5,-477 193.5,-477 193.5,-473 197.5,-473 197.5,-469 298.5,-469 298.5,-507"/>
+<polyline fill="none" stroke="#000000" points="197.5,-503 201.5,-503 201.5,-499 197.5,-499 "/>
+<polyline fill="none" stroke="#000000" points="197.5,-477 201.5,-477 201.5,-473 197.5,-473 "/>
 <text text-anchor="middle" x="248" y="-491.8" font-family="Times,serif" font-size="14.00" fill="#000000">components</text>
 <text text-anchor="middle" x="248" y="-476.8" font-family="Times,serif" font-size="14.00" fill="#000000">UI components</text>
 </g>
 <!-- P8 -->
 <g id="node2" class="node">
 <title>P8</title>
-<polygon fill="#b3cde3" stroke="#000000" points="189.5,-356 186.5,-360 165.5,-360 162.5,-356 16.5,-356 16.5,-318 189.5,-318 189.5,-356"/>
+<polygon fill="#b3cde3" stroke="#000000" points="189.5,-356 16.5,-356 16.5,-352 12.5,-352 12.5,-348 16.5,-348 16.5,-326 12.5,-326 12.5,-322 16.5,-322 16.5,-318 189.5,-318 189.5,-356"/>
+<polyline fill="none" stroke="#000000" points="16.5,-352 20.5,-352 20.5,-348 16.5,-348 "/>
+<polyline fill="none" stroke="#000000" points="16.5,-326 20.5,-326 20.5,-322 16.5,-322 "/>
 <text text-anchor="middle" x="103" y="-340.8" font-family="Times,serif" font-size="14.00" fill="#000000">viewmodels</text>
 <text text-anchor="middle" x="103" y="-325.8" font-family="Times,serif" font-size="14.00" fill="#000000">View models used by the UI</text>
 </g>
@@ -43,7 +47,9 @@
 <!-- P9 -->
 <g id="node3" class="node">
 <title>P9</title>
-<polygon fill="#ccebc5" stroke="#000000" points="275.5,-205 272.5,-209 251.5,-209 248.5,-205 78.5,-205 78.5,-167 275.5,-167 275.5,-205"/>
+<polygon fill="#ccebc5" stroke="#000000" points="275.5,-205 78.5,-205 78.5,-201 74.5,-201 74.5,-197 78.5,-197 78.5,-175 74.5,-175 74.5,-171 78.5,-171 78.5,-167 275.5,-167 275.5,-205"/>
+<polyline fill="none" stroke="#000000" points="78.5,-201 82.5,-201 82.5,-197 78.5,-197 "/>
+<polyline fill="none" stroke="#000000" points="78.5,-175 82.5,-175 82.5,-171 78.5,-171 "/>
 <text text-anchor="middle" x="177" y="-189.8" font-family="Times,serif" font-size="14.00" fill="#000000">models</text>
 <text text-anchor="middle" x="177" y="-174.8" font-family="Times,serif" font-size="14.00" fill="#000000">Models used by the view models</text>
 </g>
@@ -57,7 +63,9 @@
 <!-- P10 -->
 <g id="node4" class="node">
 <title>P10</title>
-<polygon fill="#decbe4" stroke="#000000" points="218.5,-54 215.5,-58 194.5,-58 191.5,-54 135.5,-54 135.5,-16 218.5,-16 218.5,-54"/>
+<polygon fill="#decbe4" stroke="#000000" points="218.5,-54 135.5,-54 135.5,-50 131.5,-50 131.5,-46 135.5,-46 135.5,-24 131.5,-24 131.5,-20 135.5,-20 135.5,-16 218.5,-16 218.5,-54"/>
+<polyline fill="none" stroke="#000000" points="135.5,-50 139.5,-50 139.5,-46 135.5,-46 "/>
+<polyline fill="none" stroke="#000000" points="135.5,-24 139.5,-24 139.5,-20 135.5,-20 "/>
 <text text-anchor="middle" x="177" y="-38.8" font-family="Times,serif" font-size="14.00" fill="#000000">utils</text>
 <text text-anchor="middle" x="177" y="-23.8" font-family="Times,serif" font-size="14.00" fill="#000000">general utils</text>
 </g>
@@ -92,14 +100,18 @@
 <!-- P11 -->
 <g id="node5" class="node">
 <title>P11</title>
-<polygon fill="#fed9a6" stroke="#000000" points="582.5,-507 579.5,-511 558.5,-511 555.5,-507 359.5,-507 359.5,-469 582.5,-469 582.5,-507"/>
+<polygon fill="#fed9a6" stroke="#000000" points="582.5,-507 359.5,-507 359.5,-503 355.5,-503 355.5,-499 359.5,-499 359.5,-477 355.5,-477 355.5,-473 359.5,-473 359.5,-469 582.5,-469 582.5,-507"/>
+<polyline fill="none" stroke="#000000" points="359.5,-503 363.5,-503 363.5,-499 359.5,-499 "/>
+<polyline fill="none" stroke="#000000" points="359.5,-477 363.5,-477 363.5,-473 359.5,-473 "/>
 <text text-anchor="middle" x="471" y="-491.8" font-family="Times,serif" font-size="14.00" fill="#000000">components</text>
 <text text-anchor="middle" x="471" y="-476.8" font-family="Times,serif" font-size="14.00" fill="#000000">UI components that compose the grid</text>
 </g>
 <!-- P12 -->
 <g id="node6" class="node">
 <title>P12</title>
-<polygon fill="#ffffcc" stroke="#000000" points="546,-356 543,-360 522,-360 519,-356 334,-356 334,-318 546,-318 546,-356"/>
+<polygon fill="#ffffcc" stroke="#000000" points="546,-356 334,-356 334,-352 330,-352 330,-348 334,-348 334,-326 330,-326 330,-322 334,-322 334,-318 546,-318 546,-356"/>
+<polyline fill="none" stroke="#000000" points="334,-352 338,-352 338,-348 334,-348 "/>
+<polyline fill="none" stroke="#000000" points="334,-326 338,-326 338,-322 334,-322 "/>
 <text text-anchor="middle" x="440" y="-340.8" font-family="Times,serif" font-size="14.00" fill="#000000">models</text>
 <text text-anchor="middle" x="440" y="-325.8" font-family="Times,serif" font-size="14.00" fill="#000000">Models used by the UI components</text>
 </g>
@@ -113,7 +125,9 @@
 <!-- P13 -->
 <g id="node7" class="node">
 <title>P13</title>
-<polygon fill="#e5d8bd" stroke="#000000" points="545.5,-205 542.5,-209 521.5,-209 518.5,-205 462.5,-205 462.5,-167 545.5,-167 545.5,-205"/>
+<polygon fill="#e5d8bd" stroke="#000000" points="545.5,-205 462.5,-205 462.5,-201 458.5,-201 458.5,-197 462.5,-197 462.5,-175 458.5,-175 458.5,-171 462.5,-171 462.5,-167 545.5,-167 545.5,-205"/>
+<polyline fill="none" stroke="#000000" points="462.5,-201 466.5,-201 466.5,-197 462.5,-197 "/>
+<polyline fill="none" stroke="#000000" points="462.5,-175 466.5,-175 466.5,-171 462.5,-171 "/>
 <text text-anchor="middle" x="504" y="-189.8" font-family="Times,serif" font-size="14.00" fill="#000000">utils</text>
 <text text-anchor="middle" x="504" y="-174.8" font-family="Times,serif" font-size="14.00" fill="#000000">general utils</text>
 </g>

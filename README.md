@@ -159,7 +159,8 @@ For working examples, see the following scripts:
 | --------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | `./generate_graph_image_example.sh`           | Basic example that generates an image from the example configuration (`./tslint.tslint-folders.json`). |
 | `./generate_graph_image_example_shapes.sh`    | Uses different kinds of shapes to draw the packages and sub-folders.                                   |
-| `./generate_graph_image_optimized_example.sh` | Uses optimization options to simplify the diagram.                                                     |
+| `./generate_graph_image_optimized_example_blacklist.sh` | Uses optimization options to simplify the diagram.                                                     |
+| `./generate_graph_image_example_whitelist.sh` | Uses a whitelist, to only show some top-level packages. Generates a separate diagram of sub-folders. |
 
 ---
 

@@ -57,11 +57,11 @@ function handle_diff()
 }
 
 echo yarn output to Text ...;
-yarn --silent docs $PATH_TO_TSLINT_JSON Text -outpath=$OUT_TEXT_PATH "$4" "$5" "$6" "$7" "$8"
+yarn --silent docs $PATH_TO_TSLINT_JSON Text -outpath=$OUT_TEXT_PATH "$4" "$5" "$6" "$7" "$8" "$9"
 echo "Text file is at $OUT_TEXT_PATH"
 
 echo yarn output to Dot ...;
-yarn --silent docs $PATH_TO_TSLINT_JSON Dot -outpath=$OUT_DOT_PATH "$4" "$5" "$6" "$7" "$8"
+yarn --silent docs $PATH_TO_TSLINT_JSON Dot -outpath=$OUT_DOT_PATH "$4" "$5" "$6" "$7" "$8" "$9"
 echo "Dot file is at $OUT_DOT_PATH"
 
 echo "comparing output..."
