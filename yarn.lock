@@ -7415,10 +7415,10 @@ tslint-eslint-rules@^5.3.1:
     tslib "1.9.0"
     tsutils "^3.0.0"
 
-tslint-folders@^3.0.5:
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/tslint-folders/-/tslint-folders-3.0.5.tgz#a8a820fc7f7285cb1595bb422e3e5f528fa78319"
-  integrity sha512-0y2qqalWx+qUIZ4f5GKT/f5bjaSkyHRbCYU164L1cRFrBTMUgDCns5CAwniQ0J1RFhczCp9RIutWrSiWcqYGiw==
+tslint-folders@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/tslint-folders/-/tslint-folders-4.0.0.tgz#ae02b0c7b9e4116d8ff46641a55f120bf1192b45"
+  integrity sha512-l1J5uCaYKq4RjMO10OK+GEF7hhKOVLVrG4S7SsW2wz0NksSSgqEaewr8OlpGzzgPbeDJHfNqrCJG0DlTmyGIxg==
   dependencies:
     lodash "^4.17.15"
 
