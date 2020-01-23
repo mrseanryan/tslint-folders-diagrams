@@ -4,7 +4,7 @@ digraph packages {
   graph [
     // needed to allow edge to have *cluster* as a destination:
     compound=true
-    label = "Project Packages"
+    label = "Project Packages (title)"
     labelloc = t
     
     //dpi = 200
@@ -37,7 +37,7 @@ digraph packages {
     labelloc = t
     
     node [shape="octagon"]
-    label = "Top Level Packages"
+    label = "Top-level Packages (sub-title)"
     {
     P1 [label="shell
 Application Shell" fillcolor=1]

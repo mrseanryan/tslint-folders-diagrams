@@ -8,11 +8,11 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 635.9605)">
 <title>packages</title>
 <polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-635.9605 1233.0777,-635.9605 1233.0777,4 -4,4"/>
-<text text-anchor="middle" x="614.5389" y="-616.7605" font-family="Times,serif" font-size="14.00" fill="#000000">Project Packages</text>
+<text text-anchor="middle" x="614.5389" y="-616.7605" font-family="Times,serif" font-size="14.00" fill="#000000">Project Packages (title)</text>
 <g id="clust1" class="cluster">
 <title>cluster_C1</title>
 <polygon fill="#ffffff" stroke="#000000" points="8.0777,-8 8.0777,-600.9605 598.0777,-600.9605 598.0777,-8 8.0777,-8"/>
-<text text-anchor="middle" x="303.0777" y="-585.7605" font-family="Times,serif" font-size="14.00" fill="#000000">Top Level Packages</text>
+<text text-anchor="middle" x="303.0777" y="-585.7605" font-family="Times,serif" font-size="14.00" fill="#000000">Top&#45;level Packages (sub title)</text>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_CO1_1</title>

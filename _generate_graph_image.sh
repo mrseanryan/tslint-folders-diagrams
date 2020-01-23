@@ -14,18 +14,21 @@ OUT_IMAGE_PATH=$TEMP_OUT_DIR/tslint-folders-diagrams-docs.svg;
 PATH_TO_KNOWN_GOOD_DIR=$1;
 PATH_TO_TSLINT_JSON=$2;
 
+ERRORS_OCCURRED="N"
+
 function fail()
 {
     msg=$1
     echo $msg
 
-    exit 1
+    ERRORS_OCCURRED="Y";
+    echo "[error]"
 }
 
 function diff_files()
 {
-    old=$1
-    new=$2
+    new=$1
+    old=$2
     description=$3
 
     # Filter out 'generated' lines which depend on time (and for SVG, the dot tool version):
@@ -35,7 +38,7 @@ function diff_files()
     cat $old | grep -v enerated > $old_filtered
     cat $new | grep -v enerated > $new_filtered
 
-    cmp --silent $old_filtered $new_filtered || fail "File output for '$description' is not as expected!"
+    cmp --silent $old_filtered $new_filtered || fail "File output for '$description' is not as expected! - see [old]$old vs [new]$new"
 }
 
 echo yarn output to Text ...;
@@ -51,7 +54,7 @@ diff_files $OUT_TEXT_PATH $PATH_TO_KNOWN_GOOD_DIR/output.txt Text
 diff_files $OUT_DOT_PATH $PATH_TO_KNOWN_GOOD_DIR/output.dot Dot
 
 # NOT outputting SVG on CI build, as Travis machine does not have 'dot' installed
-if ["${MY_BUILD_ENV}" == ""]; then
+if [ "${MY_BUILD_ENV}" == "" ]; then
     echo "executing dot ..."
     dot $OUT_DOT_PATH -Tsvg -o $OUT_IMAGE_PATH;
     echo "graph image is at $OUT_IMAGE_PATH"
@@ -59,6 +62,13 @@ if ["${MY_BUILD_ENV}" == ""]; then
     diff_files $OUT_IMAGE_PATH $PATH_TO_KNOWN_GOOD_DIR/output.svg SVG
 else
     echo "[skipped] dot"
-fi
+fi;
+
+if [ "${ERRORS_OCCURRED}" == "Y" ]; then
+    echo "[errors occurred]"
+    exit 1
+else
+    echo "[OK]"
+fi;
 
 echo [done];

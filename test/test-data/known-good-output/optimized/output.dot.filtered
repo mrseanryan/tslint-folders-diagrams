@@ -37,7 +37,7 @@ digraph packages {
     labelloc = t
     
     node [shape="oval"]
-    label = "Top Level Packages"
+    label = "Top-level Packages"
     {
     P1 [label="shell
 Application Shell" fillcolor=1]
