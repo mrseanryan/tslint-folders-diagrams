@@ -14,6 +14,9 @@ todo-area - TODO Area Package
       models - Models used by the view models
         --> utils
       
+      utils - general utils
+        --> (none)
+      
 contact-area - Area that shows contact details
   --> grid-package, utils, thirdPartySdk
   
@@ -25,5 +28,8 @@ grid-package - Grid Package with no dependencies
       
       models - Models used by the UI components
         --> utils
+      
+      utils - general utils
+        --> (none)
       
 _____

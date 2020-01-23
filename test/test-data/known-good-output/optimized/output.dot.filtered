@@ -33,59 +33,6 @@ digraph packages {
   edge [arrowhead="vee", arrowtail="vee", style=dashed, color="black"]
   
   /* Nodes and Clusters ================================= */
-  subgraph cluster_C1 {
-    labelloc = t
-    
-    node [shape="oval"]
-    label = "Top-level Packages"
-    {
-    P1 [label="shell
-Application Shell" fillcolor=1]
-    }
-    
-    
-    {
-    P2 [label="grid-package
-Grid Package with no dependencies" fillcolor=2]
-    }
-    
-    
-    {
-    node [style=dashed]
-    P3 [label="thirdPartySdk
-Third party SDK" fillcolor=3]
-    }
-    
-    
-    {
-    node [style=dashed]
-    P4 [label="*
-(can import any packages)" fillcolor=4]
-    }
-    
-    
-    subgraph cluster_C2 {
-      labelloc = t
-      
-      color = gray
-      style=dashed
-      label = ""
-      {
-      P5 [label="todo-area
-TODO Area Package" fillcolor=5]
-      }
-      
-      
-      {
-      P6 [label="contact-area
-Area that shows contact details" fillcolor=6]
-      }
-      
-      
-    }
-    
-  }
-  
   subgraph cluster_C3 {
     labelloc = t
     
@@ -93,26 +40,32 @@ Area that shows contact details" fillcolor=6]
     label = "todo-area - TODO Area Package"
     {
     P7 [label="components
-UI components" fillcolor=7]
+UI components" fillcolor=1]
     }
     
     
     {
     P8 [label="viewmodels
-View models used by the UI" fillcolor=8]
+View models used by the UI" fillcolor=2]
     }
     
     
     {
     P9 [label="models
-Models used by the view models" fillcolor=9]
+Models used by the view models" fillcolor=3]
+    }
+    
+    
+    {
+    P10 [label="utils
+general utils" fillcolor=4]
     }
     
     
     {
     node [style=dashed]
-    P10 [label="*
-(can import any folders)" fillcolor=1]
+    P11 [label="*
+(can import any folders)" fillcolor=5]
     }
     
     
@@ -124,21 +77,27 @@ Models used by the view models" fillcolor=9]
     node [shape="folder"]
     label = "grid-package - Grid Package with no dependencies"
     {
-    P11 [label="components
-UI components that compose the grid" fillcolor=2]
+    P12 [label="components
+UI components that compose the grid" fillcolor=6]
     }
     
     
     {
-    P12 [label="models
-Models used by the UI components" fillcolor=3]
+    P13 [label="models
+Models used by the UI components" fillcolor=7]
+    }
+    
+    
+    {
+    P14 [label="utils
+general utils" fillcolor=8]
     }
     
     
     {
     node [style=dashed]
-    P13 [label="*
-(can import any folders)" fillcolor=4]
+    P15 [label="*
+(can import any folders)" fillcolor=9]
     }
     
     
@@ -146,12 +105,11 @@ Models used by the UI components" fillcolor=3]
   
   
   /* Edges ================================= */
-  P1-> P4 [label=" " ]
-  P5-> P2 [label=" "  ltail=cluster_C2]
-  P2-> P3 [label=" " ]
-  P5-> P3 [label=" "  ltail=cluster_C2]
-  P7-> P10 [label=" " ]
+  P7-> P11 [label=" " ]
   P8-> P9 [label=" " ]
-  P11-> P13 [label=" " ]
+  P8-> P10 [label=" " ]
+  P9-> P10 [label=" " ]
+  P12-> P15 [label=" " ]
+  P13-> P14 [label=" " ]
   
 }

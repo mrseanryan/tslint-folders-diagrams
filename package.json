@@ -111,6 +111,7 @@
         "test:itest": "yarn test:itest:simple && yarn test:itest:complex",
         "test:itest:simple": "yarn docs:test && yarn docs:test-no-subfolders && yarn docs:test-dot && yarn docs:test-dot-no-subfolders",
         "test:itest:complex": "./generate_graph_image_example.sh && ./generate_graph_image_example_shapes.sh && ./generate_graph_image_optimized_example.sh",
+        "test:itest:update-snapshots": "./generate_graph_image_example.sh -update-snapshots && ./generate_graph_image_example_shapes.sh -update-snapshots && ./generate_graph_image_optimized_example.sh -update-snapshots",
         "test:watch": "jest --coverage --watch",
         "test:prod": "yarn build && yarn lint && yarn test -- --no-cache",
         "tsl:build-and-test": "yarn build && yarn tsl:test",

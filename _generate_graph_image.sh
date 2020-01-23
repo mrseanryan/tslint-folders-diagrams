@@ -3,16 +3,17 @@
 # stop on first error:
 set -e
 
-# assumption: the machine has an environment variable TEMP pointing to a temporary files location.
+GENERATE_MODE=$1
 
+# assumption: the machine has an environment variable TEMP pointing to a temporary files location.
 TEMP_OUT_DIR=`mktemp -d 2>/dev/null || mktemp -d -t 'temp'`
 
 OUT_TEXT_PATH=$TEMP_OUT_DIR/tslint-folders-diagrams-docs.txt;
 OUT_DOT_PATH=$TEMP_OUT_DIR/tslint-folders-diagrams-docs.dot;
 OUT_IMAGE_PATH=$TEMP_OUT_DIR/tslint-folders-diagrams-docs.svg;
 
-PATH_TO_KNOWN_GOOD_DIR=$1;
-PATH_TO_TSLINT_JSON=$2;
+PATH_TO_KNOWN_GOOD_DIR=$2;
+PATH_TO_TSLINT_JSON=$3;
 
 ERRORS_OCCURRED="N"
 
@@ -38,15 +39,29 @@ function diff_files()
     cat $old | grep -v enerated > $old_filtered
     cat $new | grep -v enerated > $new_filtered
 
-    cmp --silent $old_filtered $new_filtered || fail "File output for '$description' is not as expected! - see [old]$old vs [new]$new"
+    cmp --silent $old_filtered $new_filtered || handle_diff $new $old $description
+}
+
+function handle_diff()
+{
+    new=$1
+    old=$2
+    description=$3
+
+    if [ "${GENERATE_MODE}" == "-update-snapshots" ]; then
+        echo "Updating known-good snapshot at $old"
+        cp $new $old
+    else
+        fail "File output for '$description' is not as expected! - see [old]$old vs [new]$new"
+    fi;
 }
 
 echo yarn output to Text ...;
-yarn --silent docs $PATH_TO_TSLINT_JSON Text -outpath=$OUT_TEXT_PATH "$3" "$4" "$5" "$6" "$7"
+yarn --silent docs $PATH_TO_TSLINT_JSON Text -outpath=$OUT_TEXT_PATH "$4" "$5" "$6" "$7" "$8"
 echo "Text file is at $OUT_TEXT_PATH"
 
 echo yarn output to Dot ...;
-yarn --silent docs $PATH_TO_TSLINT_JSON Dot -outpath=$OUT_DOT_PATH "$3" "$4" "$5" "$6" "$7"
+yarn --silent docs $PATH_TO_TSLINT_JSON Dot -outpath=$OUT_DOT_PATH "$4" "$5" "$6" "$7" "$8"
 echo "Dot file is at $OUT_DOT_PATH"
 
 echo "comparing output..."

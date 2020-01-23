@@ -45,7 +45,7 @@ export class GraphGenerator {
             ClusterType.TopLevel
         );
 
-        if (!this.filter.hasWhitelist) {
+        if (this.config.skipSubFolders) {
             this.root.nodes.push(topLevelCluster);
         }
 
@@ -254,7 +254,7 @@ export class GraphGenerator {
                         }
                     }
 
-                    this.processEdgesForPackageNames(
+                    this.processEdgesForSubFolderNames(
                         thisSubFolderId,
                         allowedSubFolders,
                         pkg.importPath
@@ -285,13 +285,30 @@ export class GraphGenerator {
         };
     }
 
+    private processEdgesForSubFolderNames(
+        thisPkgId: string,
+        allowedPackages: string[],
+        packageIdPrefix: string
+    ) {
+        return this.processEdgesForPackageNames(thisPkgId, allowedPackages, packageIdPrefix);
+    }
+
     private processEdgesForPackageNames(
         thisPkgId: string,
         allowedPackages: string[],
         packageIdPrefix?: string
     ) {
+        const isSubFolder = !!packageIdPrefix;
+
+        const isAnyPackage = (pkgName: string): boolean => {
+            return pkgName === this.getAnyPackageId();
+        };
+
         allowedPackages
-            .filter(pkg => this.filter.isImportPathOkForEdges(pkg))
+            // black/white lists do not apply to sub-folders, or to the 'any' package
+            .filter(
+                pkg => isSubFolder || isAnyPackage(pkg) || this.filter.isImportPathOkForEdges(pkg)
+            )
             .forEach(allowedPkg => {
                 const allowedPkgId = this.mapNameToId.getIdOrThrow(
                     this.getPackageIdKey(allowedPkg, packageIdPrefix)
