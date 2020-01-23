@@ -1,0 +1,17 @@
+_____
+todo-area - TODO Area Package
+  --> grid-package, utils, thirdPartySdk
+    folders:
+      components - UI components
+        --> (any)
+      
+      viewmodels - View models used by the UI
+        --> models, utils
+      
+      models - Models used by the view models
+        --> utils
+      
+      utils - general utils
+        --> (none)
+      
+_____

@@ -1,0 +1,88 @@
+/* Header ================================= */
+digraph packages {
+  /* Graph settings ================================= */
+  graph [
+    // needed to allow edge to have *cluster* as a destination:
+    compound=true
+    label = "Project Packages with whitelist (title)"
+    labelloc = t
+    
+    //dpi = 200
+    ranksep=0.65
+    nodesep=0.40
+    rankdir=TB
+    
+    style="filled"
+    
+    len=0
+  ]
+  
+  /* Styling ================================= */
+  graph [
+    bgcolor="#FFFFFF"
+    fillcolor="#FFFFFF"
+  ]
+  node [
+    labeljust="l"
+    colorscheme="pastel19"
+    style=filled
+    fillcolor=3
+    shape=record
+  ]
+  
+  edge [arrowhead="vee", arrowtail="vee", style=dashed, color="black"]
+  
+  /* Nodes and Clusters ================================= */
+  subgraph cluster_C1 {
+    labelloc = t
+    
+    node [shape="oval"]
+    label = "Top-level Packages [whitelist todo-area,contact-area,shell,utils] (sub title)"
+    {
+    P1 [label="shell
+Application Shell" fillcolor=1]
+    }
+    
+    
+    {
+    P4 [label="utils
+Utils package" fillcolor=2]
+    }
+    
+    
+    subgraph cluster_CO1_1 {
+      labelloc = t
+      
+      color = gray
+      style=dashed
+      label = ""
+      {
+      P2 [label="todo-area
+TODO Area Package" fillcolor=3]
+      }
+      
+      
+      {
+      P3 [label="contact-area
+Area that shows contact details" fillcolor=4]
+      }
+      
+      
+    }
+    
+  }
+  
+  subgraph cluster_C2 {
+    labelloc = t
+    
+    node [shape="folder"]
+    label = "todo-area - TODO Area Package"
+  }
+  
+  
+  /* Edges ================================= */
+  P1-> P4 [label=" " ]
+  P1-> P2 [label=" "  lhead=cluster_CO1_1]
+  P2-> P4 [label=" "  ltail=cluster_CO1_1]
+  
+}

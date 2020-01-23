@@ -1,0 +1,76 @@
+/* Header ================================= */
+digraph packages {
+  /* Graph settings ================================= */
+  graph [
+    // needed to allow edge to have *cluster* as a destination:
+    compound=true
+    label = "todo-area (title)"
+    labelloc = t
+    
+    //dpi = 200
+    ranksep=0.65
+    nodesep=0.40
+    rankdir=TB
+    
+    style="filled"
+    
+    len=0
+  ]
+  
+  /* Styling ================================= */
+  graph [
+    bgcolor="#FFFFFF"
+    fillcolor="#FFFFFF"
+  ]
+  node [
+    labeljust="l"
+    colorscheme="pastel19"
+    style=filled
+    fillcolor=3
+    shape=record
+  ]
+  
+  edge [arrowhead="vee", arrowtail="vee", style=dashed, color="black"]
+  
+  /* Nodes and Clusters ================================= */
+  subgraph cluster_C2 {
+    labelloc = t
+    
+    node [shape="folder"]
+    label = "todo-area - TODO Area Package"
+    {
+    P2 [label="components
+UI components" fillcolor=1]
+    }
+    
+    
+    {
+    P3 [label="viewmodels
+View models used by the UI" fillcolor=2]
+    }
+    
+    
+    {
+    P4 [label="models
+Models used by the view models" fillcolor=3]
+    }
+    
+    
+    {
+    P5 [label="utils
+general utils" fillcolor=4]
+    }
+    
+    
+  }
+  
+  
+  /* Edges ================================= */
+  P2-> P3 [label=" " ]
+  P2-> P4 [label=" " ]
+  P2-> P5 [label=" " ]
+  P3-> P4 [label=" " ]
+  P3-> P5 [label=" " ]
+  P4-> P5 [label=" " ]
+  
+}

@@ -22,34 +22,35 @@ export class PackageFilter {
     }
 
     private passesBlacklist(importPath: string): boolean {
-        return this.invalidPaths.indexOf(importPath) < 0;
+        return !this.invalidPaths.includes(importPath);
+    }
+
+    private passesBlackAndWhitelist(importPath: string): boolean {
+        return this.passesBlacklist(importPath) && this.passesWhitelist(importPath);
     }
 
     private passesWhitelist(importPath: string): boolean {
-        return this.whiteListPaths.length === 0 || this.whiteListPaths.indexOf(importPath) >= 0;
+        return this.whiteListPaths.length === 0 || this.whiteListPaths.includes(importPath);
     }
 
     canOutputSubfoldersOf(folder: PackageFolder): boolean {
-        return this.passesWhitelist(folder.importPath);
-    }
-
-    get hasWhitelist(): boolean {
-        return this.whiteListPaths.length > 0;
+        return this.passesBlackAndWhitelist(folder.importPath);
     }
 
     isImportPathOkForFolder(folder: PackageFolder): boolean {
-        return this.passesBlacklist(folder.importPath);
+        return this.passesBlackAndWhitelist(folder.importPath);
     }
 
     isImportPathOkForFolderWithWhitelist(folder: PackageFolder): boolean {
         return this.isImportPathOkForFolder(folder) && this.passesWhitelist(folder.importPath);
     }
 
-    isImportPathOkForSubFolder(folder: PackageSubFolder): boolean {
-        return !this.skipSubFolders && this.passesBlacklist(folder.importPath);
+    isImportPathOkForSubFolder(): boolean {
+        // black/white lists do not apply to sub-folders
+        return !this.skipSubFolders;
     }
 
     isImportPathOkForEdges(importPath: string): boolean {
-        return this.passesBlacklist(importPath);
+        return this.passesBlackAndWhitelist(importPath);
     }
 }

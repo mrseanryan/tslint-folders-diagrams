@@ -3,170 +3,209 @@
  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
  -->
 <!-- Title: packages Pages: 1 -->
-<svg width="1603pt" height="481pt"
- viewBox="0.00 0.00 1603.00 481.22" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 477.2203)">
+<svg width="1665pt" height="626pt"
+ viewBox="0.00 0.00 1665.00 626.22" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 622.2203)">
 <title>packages</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-477.2203 1599,-477.2203 1599,4 -4,4"/>
-<text text-anchor="middle" x="797.5" y="-458.0203" font-family="Times,serif" font-size="14.00" fill="#000000">Project Packages</text>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-622.2203 1661,-622.2203 1661,4 -4,4"/>
+<text text-anchor="middle" x="828.5" y="-603.0203" font-family="Times,serif" font-size="14.00" fill="#000000">importBlacklist is utils</text>
 <g id="clust1" class="cluster">
 <title>cluster_C1</title>
-<polygon fill="#ffffff" stroke="#000000" points="8,-8 8,-442.2203 700,-442.2203 700,-8 8,-8"/>
-<text text-anchor="middle" x="354" y="-427.0203" font-family="Times,serif" font-size="14.00" fill="#000000">Top&#45;level Packages</text>
+<polygon fill="#ffffff" stroke="#000000" points="8,-8 8,-587.2203 700,-587.2203 700,-8 8,-8"/>
+<text text-anchor="middle" x="354" y="-572.0203" font-family="Times,serif" font-size="14.00" fill="#000000">Top&#45;level Packages</text>
 </g>
-<g id="clust6" class="cluster">
+<g id="clust4" class="cluster">
 <title>cluster_C2</title>
-<polygon fill="#ffffff" stroke="#c0c0c0" stroke-dasharray="5,2" points="195,-341.4802 195,-411.2203 692,-411.2203 692,-341.4802 195,-341.4802"/>
+<polygon fill="#ffffff" stroke="#c0c0c0" stroke-dasharray="5,2" points="195,-486.4802 195,-556.2203 692,-556.2203 692,-486.4802 195,-486.4802"/>
 </g>
-<g id="clust9" class="cluster">
+<g id="clust7" class="cluster">
 <title>cluster_C3</title>
-<polygon fill="#ffffff" stroke="#000000" points="708,-182.6102 708,-426.3503 1099,-426.3503 1099,-182.6102 708,-182.6102"/>
-<text text-anchor="middle" x="903.5" y="-411.1503" font-family="Times,serif" font-size="14.00" fill="#000000">todo&#45;area &#45; TODO Area Package</text>
+<polygon fill="#ffffff" stroke="#c0c0c0" stroke-dasharray="5,2" points="306,-16 306,-389.4802 622,-389.4802 622,-16 306,-16"/>
 </g>
-<g id="clust14" class="cluster">
+<g id="clust10" class="cluster">
 <title>cluster_C4</title>
-<polygon fill="#ffffff" stroke="#000000" points="1107,-182.6102 1107,-426.3503 1587,-426.3503 1587,-182.6102 1107,-182.6102"/>
-<text text-anchor="middle" x="1347" y="-411.1503" font-family="Times,serif" font-size="14.00" fill="#000000">grid&#45;package &#45; Grid Package with no dependencies</text>
+<polygon fill="#ffffff" stroke="#000000" points="708,-168.7401 708,-571.3503 1161,-571.3503 1161,-168.7401 708,-168.7401"/>
+<text text-anchor="middle" x="934.5" y="-556.1503" font-family="Times,serif" font-size="14.00" fill="#000000">todo&#45;area &#45; TODO Area Package</text>
+</g>
+<g id="clust16" class="cluster">
+<title>cluster_C5</title>
+<polygon fill="#ffffff" stroke="#000000" points="1169,-327.6102 1169,-571.3503 1649,-571.3503 1649,-327.6102 1169,-327.6102"/>
+<text text-anchor="middle" x="1409" y="-556.1503" font-family="Times,serif" font-size="14.00" fill="#000000">grid&#45;package &#45; Grid Package with no dependencies</text>
 </g>
 <!-- P1 -->
 <g id="node1" class="node">
 <title>P1</title>
-<ellipse fill="#fbb4ae" stroke="#000000" cx="95" cy="-376.3503" rx="79.3924" ry="26.7407"/>
-<text text-anchor="middle" x="95" y="-380.1503" font-family="Times,serif" font-size="14.00" fill="#000000">shell</text>
-<text text-anchor="middle" x="95" y="-365.1503" font-family="Times,serif" font-size="14.00" fill="#000000">Application Shell</text>
-</g>
-<!-- P4 -->
-<g id="node4" class="node">
-<title>P4</title>
-<ellipse fill="none" stroke="#000000" stroke-dasharray="5,2" cx="130" cy="-209.6102" rx="113.6886" ry="26.7407"/>
-<text text-anchor="middle" x="130" y="-213.4102" font-family="Times,serif" font-size="14.00" fill="#000000">*</text>
-<text text-anchor="middle" x="130" y="-198.4102" font-family="Times,serif" font-size="14.00" fill="#000000">(can import any packages)</text>
-</g>
-<!-- P1&#45;&gt;P4 -->
-<g id="edge1" class="edge">
-<title>P1&#45;&gt;P4</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M100.7013,-349.1895C106.5661,-321.2493 115.7403,-277.5433 122.2589,-246.4886"/>
-<polygon fill="#000000" stroke="#000000" points="124.3592,-236.483 126.7088,-247.1942 123.332,-241.3764 122.3048,-246.2698 122.3048,-246.2698 122.3048,-246.2698 123.332,-241.3764 117.9008,-245.3453 124.3592,-236.483 124.3592,-236.483"/>
-<text text-anchor="middle" x="115" y="-289.2802" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<ellipse fill="#fbb4ae" stroke="#000000" cx="95" cy="-521.3503" rx="79.3924" ry="26.7407"/>
+<text text-anchor="middle" x="95" y="-525.1503" font-family="Times,serif" font-size="14.00" fill="#000000">shell</text>
+<text text-anchor="middle" x="95" y="-510.1503" font-family="Times,serif" font-size="14.00" fill="#000000">Application Shell</text>
 </g>
 <!-- P2 -->
 <g id="node2" class="node">
 <title>P2</title>
-<ellipse fill="#b3cde3" stroke="#000000" cx="449" cy="-209.6102" rx="149.8133" ry="26.7407"/>
-<text text-anchor="middle" x="449" y="-213.4102" font-family="Times,serif" font-size="14.00" fill="#000000">grid&#45;package</text>
-<text text-anchor="middle" x="449" y="-198.4102" font-family="Times,serif" font-size="14.00" fill="#000000">Grid Package with no dependencies</text>
+<ellipse fill="none" stroke="#000000" stroke-dasharray="5,2" cx="130" cy="-354.6102" rx="113.6886" ry="26.7407"/>
+<text text-anchor="middle" x="130" y="-358.4102" font-family="Times,serif" font-size="14.00" fill="#000000">*</text>
+<text text-anchor="middle" x="130" y="-343.4102" font-family="Times,serif" font-size="14.00" fill="#000000">(can import any packages)</text>
+</g>
+<!-- P1&#45;&gt;P2 -->
+<g id="edge1" class="edge">
+<title>P1&#45;&gt;P2</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M100.7013,-494.1895C106.5661,-466.2493 115.7403,-422.5433 122.2589,-391.4886"/>
+<polygon fill="#000000" stroke="#000000" points="124.3592,-381.483 126.7088,-392.1942 123.332,-386.3764 122.3048,-391.2698 122.3048,-391.2698 122.3048,-391.2698 123.332,-386.3764 117.9008,-390.3453 124.3592,-381.483 124.3592,-381.483"/>
+<text text-anchor="middle" x="115" y="-434.2802" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
 </g>
 <!-- P3 -->
 <g id="node3" class="node">
 <title>P3</title>
-<ellipse fill="none" stroke="#000000" stroke-dasharray="5,2" cx="532" cy="-42.8701" rx="77.1494" ry="26.7407"/>
-<text text-anchor="middle" x="532" y="-46.6701" font-family="Times,serif" font-size="14.00" fill="#000000">thirdPartySdk</text>
-<text text-anchor="middle" x="532" y="-31.6701" font-family="Times,serif" font-size="14.00" fill="#000000">Third party SDK</text>
-</g>
-<!-- P2&#45;&gt;P3 -->
-<g id="edge3" class="edge">
-<title>P2&#45;&gt;P3</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M462.3354,-182.8205C476.372,-154.6221 498.5479,-110.0725 514.1001,-78.8294"/>
-<polygon fill="#000000" stroke="#000000" points="518.6977,-69.5933 518.2699,-80.5508 516.4696,-74.0694 514.2414,-78.5455 514.2414,-78.5455 514.2414,-78.5455 516.4696,-74.0694 510.2129,-76.5401 518.6977,-69.5933 518.6977,-69.5933"/>
-<text text-anchor="middle" x="495" y="-122.5401" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<ellipse fill="#ccebc5" stroke="#000000" cx="590" cy="-521.3503" rx="94.0904" ry="26.7407"/>
+<text text-anchor="middle" x="590" y="-525.1503" font-family="Times,serif" font-size="14.00" fill="#000000">todo&#45;area</text>
+<text text-anchor="middle" x="590" y="-510.1503" font-family="Times,serif" font-size="14.00" fill="#000000">TODO Area Package</text>
 </g>
 <!-- P5 -->
 <g id="node5" class="node">
 <title>P5</title>
-<ellipse fill="#fed9a6" stroke="#000000" cx="590" cy="-376.3503" rx="94.0904" ry="26.7407"/>
-<text text-anchor="middle" x="590" y="-380.1503" font-family="Times,serif" font-size="14.00" fill="#000000">todo&#45;area</text>
-<text text-anchor="middle" x="590" y="-365.1503" font-family="Times,serif" font-size="14.00" fill="#000000">TODO Area Package</text>
+<ellipse fill="#fed9a6" stroke="#000000" cx="464" cy="-354.6102" rx="149.8133" ry="26.7407"/>
+<text text-anchor="middle" x="464" y="-358.4102" font-family="Times,serif" font-size="14.00" fill="#000000">grid&#45;package</text>
+<text text-anchor="middle" x="464" y="-343.4102" font-family="Times,serif" font-size="14.00" fill="#000000">Grid Package with no dependencies</text>
 </g>
-<!-- P5&#45;&gt;P2 -->
+<!-- P3&#45;&gt;P5 -->
 <g id="edge2" class="edge">
-<title>P5&#45;&gt;P2</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M560.5146,-341.4822C536.2551,-312.7941 502.0617,-272.3585 477.95,-243.8451"/>
-<polygon fill="#000000" stroke="#000000" points="471.4703,-236.1826 481.3636,-240.9127 474.6989,-240.0005 477.9275,-243.8184 477.9275,-243.8184 477.9275,-243.8184 474.6989,-240.0005 474.4913,-246.7241 471.4703,-236.1826 471.4703,-236.1826"/>
-<text text-anchor="middle" x="527" y="-289.2802" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
-</g>
-<!-- P5&#45;&gt;P3 -->
-<g id="edge4" class="edge">
-<title>P5&#45;&gt;P3</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M634.6922,-341.4812C646.9812,-327.9943 657,-311.3622 657,-292.9802 657,-292.9802 657,-292.9802 657,-126.2401 657,-96.0076 631.3796,-76.0615 603.337,-63.2845"/>
-<polygon fill="#000000" stroke="#000000" points="593.7676,-59.2218 604.731,-58.9876 598.37,-61.1758 602.9724,-63.1298 602.9724,-63.1298 602.9724,-63.1298 598.37,-61.1758 601.2138,-67.2719 593.7676,-59.2218 593.7676,-59.2218"/>
-<text text-anchor="middle" x="659" y="-205.9102" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<title>P3&#45;&gt;P5</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M577.5336,-486.4837C567.6785,-462.0859 552.217,-429.6634 532,-405.4802 526.4947,-398.8949 519.9765,-392.6739 513.1909,-386.992"/>
+<polygon fill="#000000" stroke="#000000" points="505.147,-380.5802 515.7716,-383.2945 509.0569,-383.6968 512.9667,-386.8134 512.9667,-386.8134 512.9667,-386.8134 509.0569,-383.6968 510.1618,-390.3323 505.147,-380.5802 505.147,-380.5802"/>
+<text text-anchor="middle" x="560" y="-434.2802" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
 </g>
 <!-- P6 -->
 <g id="node6" class="node">
 <title>P6</title>
-<ellipse fill="#ffffcc" stroke="#000000" cx="335" cy="-376.3503" rx="131.5437" ry="26.7407"/>
-<text text-anchor="middle" x="335" y="-380.1503" font-family="Times,serif" font-size="14.00" fill="#000000">contact&#45;area</text>
-<text text-anchor="middle" x="335" y="-365.1503" font-family="Times,serif" font-size="14.00" fill="#000000">Area that shows contact details</text>
+<ellipse fill="none" stroke="#000000" stroke-dasharray="5,2" cx="501" cy="-50.8701" rx="77.1494" ry="26.7407"/>
+<text text-anchor="middle" x="501" y="-54.6701" font-family="Times,serif" font-size="14.00" fill="#000000">thirdPartySdk</text>
+<text text-anchor="middle" x="501" y="-39.6701" font-family="Times,serif" font-size="14.00" fill="#000000">Third party SDK</text>
+</g>
+<!-- P3&#45;&gt;P6 -->
+<g id="edge3" class="edge">
+<title>P3&#45;&gt;P6</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M624.9295,-486.4816C635.3253,-472.5777 644,-455.6745 644,-437.9802 644,-437.9802 644,-437.9802 644,-127.2401 644,-94.195 613.9207,-75.397 581.3529,-64.7287"/>
+<polygon fill="#000000" stroke="#000000" points="571.6621,-61.8011 582.5362,-60.3853 576.4485,-63.2471 581.2349,-64.6931 581.2349,-64.6931 581.2349,-64.6931 576.4485,-63.2471 579.9335,-69.0008 571.6621,-61.8011 571.6621,-61.8011"/>
+<text text-anchor="middle" x="646" y="-267.5401" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+</g>
+<!-- P4 -->
+<g id="node4" class="node">
+<title>P4</title>
+<ellipse fill="#decbe4" stroke="#000000" cx="335" cy="-521.3503" rx="131.5437" ry="26.7407"/>
+<text text-anchor="middle" x="335" y="-525.1503" font-family="Times,serif" font-size="14.00" fill="#000000">contact&#45;area</text>
+<text text-anchor="middle" x="335" y="-510.1503" font-family="Times,serif" font-size="14.00" fill="#000000">Area that shows contact details</text>
+</g>
+<!-- P5&#45;&gt;P6 -->
+<g id="edge4" class="edge">
+<title>P5&#45;&gt;P6</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M473.3887,-327.5527C478.1755,-311.4101 483,-290.3903 483,-271.2401 483,-271.2401 483,-271.2401 483,-127.2401 483,-114.1502 485.5362,-100.1268 488.7046,-87.7151"/>
+<polygon fill="#000000" stroke="#000000" points="491.4729,-77.7242 493.1392,-88.5627 490.1378,-82.5426 488.8026,-87.3611 488.8026,-87.3611 488.8026,-87.3611 490.1378,-82.5426 484.466,-86.1594 491.4729,-77.7242 491.4729,-77.7242"/>
+<text text-anchor="middle" x="485" y="-192.0401" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
 </g>
 <!-- P7 -->
 <g id="node7" class="node">
 <title>P7</title>
-<polygon fill="#e5d8bd" stroke="#000000" points="1067.5,-395.3503 1064.5,-399.3503 1043.5,-399.3503 1040.5,-395.3503 966.5,-395.3503 966.5,-357.3503 1067.5,-357.3503 1067.5,-395.3503"/>
-<text text-anchor="middle" x="1017" y="-380.1503" font-family="Times,serif" font-size="14.00" fill="#000000">components</text>
-<text text-anchor="middle" x="1017" y="-365.1503" font-family="Times,serif" font-size="14.00" fill="#000000">UI components</text>
-</g>
-<!-- P10 -->
-<g id="node10" class="node">
-<title>P10</title>
-<polygon fill="none" stroke="#000000" stroke-dasharray="5,2" points="1091.5,-228.6102 1088.5,-232.6102 1067.5,-232.6102 1064.5,-228.6102 942.5,-228.6102 942.5,-190.6102 1091.5,-190.6102 1091.5,-228.6102"/>
-<text text-anchor="middle" x="1017" y="-213.4102" font-family="Times,serif" font-size="14.00" fill="#000000">*</text>
-<text text-anchor="middle" x="1017" y="-198.4102" font-family="Times,serif" font-size="14.00" fill="#000000">(can import any folders)</text>
-</g>
-<!-- P7&#45;&gt;P10 -->
-<g id="edge5" class="edge">
-<title>P7&#45;&gt;P10</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M1017,-357.2231C1017,-328.2776 1017,-273.1171 1017,-239.0353"/>
-<polygon fill="#000000" stroke="#000000" points="1017,-228.7704 1021.5001,-238.7704 1017,-233.7704 1017.0001,-238.7704 1017.0001,-238.7704 1017.0001,-238.7704 1017,-233.7704 1012.5001,-238.7705 1017,-228.7704 1017,-228.7704"/>
-<text text-anchor="middle" x="1019" y="-289.2802" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
-</g>
-<!-- P8 -->
-<g id="node8" class="node">
-<title>P8</title>
-<polygon fill="#fddaec" stroke="#000000" points="901.5,-395.3503 898.5,-399.3503 877.5,-399.3503 874.5,-395.3503 728.5,-395.3503 728.5,-357.3503 901.5,-357.3503 901.5,-395.3503"/>
-<text text-anchor="middle" x="815" y="-380.1503" font-family="Times,serif" font-size="14.00" fill="#000000">viewmodels</text>
-<text text-anchor="middle" x="815" y="-365.1503" font-family="Times,serif" font-size="14.00" fill="#000000">View models used by the UI</text>
-</g>
-<!-- P9 -->
-<g id="node9" class="node">
-<title>P9</title>
-<polygon fill="#f2f2f2" stroke="#000000" points="913.5,-228.6102 910.5,-232.6102 889.5,-232.6102 886.5,-228.6102 716.5,-228.6102 716.5,-190.6102 913.5,-190.6102 913.5,-228.6102"/>
-<text text-anchor="middle" x="815" y="-213.4102" font-family="Times,serif" font-size="14.00" fill="#000000">models</text>
-<text text-anchor="middle" x="815" y="-198.4102" font-family="Times,serif" font-size="14.00" fill="#000000">Models used by the view models</text>
-</g>
-<!-- P8&#45;&gt;P9 -->
-<g id="edge6" class="edge">
-<title>P8&#45;&gt;P9</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M815,-357.2231C815,-328.2776 815,-273.1171 815,-239.0353"/>
-<polygon fill="#000000" stroke="#000000" points="815,-228.7704 819.5001,-238.7704 815,-233.7704 815.0001,-238.7704 815.0001,-238.7704 815.0001,-238.7704 815,-233.7704 810.5001,-238.7705 815,-228.7704 815,-228.7704"/>
-<text text-anchor="middle" x="817" y="-289.2802" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<polygon fill="#e5d8bd" stroke="#000000" points="1129.5,-540.3503 1126.5,-544.3503 1105.5,-544.3503 1102.5,-540.3503 1028.5,-540.3503 1028.5,-502.3503 1129.5,-502.3503 1129.5,-540.3503"/>
+<text text-anchor="middle" x="1079" y="-525.1503" font-family="Times,serif" font-size="14.00" fill="#000000">components</text>
+<text text-anchor="middle" x="1079" y="-510.1503" font-family="Times,serif" font-size="14.00" fill="#000000">UI components</text>
 </g>
 <!-- P11 -->
 <g id="node11" class="node">
 <title>P11</title>
-<polygon fill="#b3cde3" stroke="#000000" points="1579.5,-395.3503 1576.5,-399.3503 1555.5,-399.3503 1552.5,-395.3503 1356.5,-395.3503 1356.5,-357.3503 1579.5,-357.3503 1579.5,-395.3503"/>
-<text text-anchor="middle" x="1468" y="-380.1503" font-family="Times,serif" font-size="14.00" fill="#000000">components</text>
-<text text-anchor="middle" x="1468" y="-365.1503" font-family="Times,serif" font-size="14.00" fill="#000000">UI components that compose the grid</text>
+<polygon fill="none" stroke="#000000" stroke-dasharray="5,2" points="1153.5,-373.6102 1150.5,-377.6102 1129.5,-377.6102 1126.5,-373.6102 1004.5,-373.6102 1004.5,-335.6102 1153.5,-335.6102 1153.5,-373.6102"/>
+<text text-anchor="middle" x="1079" y="-358.4102" font-family="Times,serif" font-size="14.00" fill="#000000">*</text>
+<text text-anchor="middle" x="1079" y="-343.4102" font-family="Times,serif" font-size="14.00" fill="#000000">(can import any folders)</text>
 </g>
-<!-- P13 -->
-<g id="node13" class="node">
-<title>P13</title>
-<polygon fill="none" stroke="#000000" stroke-dasharray="5,2" points="1542.5,-228.6102 1539.5,-232.6102 1518.5,-232.6102 1515.5,-228.6102 1393.5,-228.6102 1393.5,-190.6102 1542.5,-190.6102 1542.5,-228.6102"/>
-<text text-anchor="middle" x="1468" y="-213.4102" font-family="Times,serif" font-size="14.00" fill="#000000">*</text>
-<text text-anchor="middle" x="1468" y="-198.4102" font-family="Times,serif" font-size="14.00" fill="#000000">(can import any folders)</text>
+<!-- P7&#45;&gt;P11 -->
+<g id="edge5" class="edge">
+<title>P7&#45;&gt;P11</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M1079,-502.2231C1079,-473.2776 1079,-418.1171 1079,-384.0353"/>
+<polygon fill="#000000" stroke="#000000" points="1079,-373.7704 1083.5001,-383.7704 1079,-378.7704 1079.0001,-383.7704 1079.0001,-383.7704 1079.0001,-383.7704 1079,-378.7704 1074.5001,-383.7705 1079,-373.7704 1079,-373.7704"/>
+<text text-anchor="middle" x="1081" y="-434.2802" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
 </g>
-<!-- P11&#45;&gt;P13 -->
+<!-- P8 -->
+<g id="node8" class="node">
+<title>P8</title>
+<polygon fill="#fddaec" stroke="#000000" points="950.5,-540.3503 947.5,-544.3503 926.5,-544.3503 923.5,-540.3503 777.5,-540.3503 777.5,-502.3503 950.5,-502.3503 950.5,-540.3503"/>
+<text text-anchor="middle" x="864" y="-525.1503" font-family="Times,serif" font-size="14.00" fill="#000000">viewmodels</text>
+<text text-anchor="middle" x="864" y="-510.1503" font-family="Times,serif" font-size="14.00" fill="#000000">View models used by the UI</text>
+</g>
+<!-- P9 -->
+<g id="node9" class="node">
+<title>P9</title>
+<polygon fill="#f2f2f2" stroke="#000000" points="913.5,-373.6102 910.5,-377.6102 889.5,-377.6102 886.5,-373.6102 716.5,-373.6102 716.5,-335.6102 913.5,-335.6102 913.5,-373.6102"/>
+<text text-anchor="middle" x="815" y="-358.4102" font-family="Times,serif" font-size="14.00" fill="#000000">models</text>
+<text text-anchor="middle" x="815" y="-343.4102" font-family="Times,serif" font-size="14.00" fill="#000000">Models used by the view models</text>
+</g>
+<!-- P8&#45;&gt;P9 -->
+<g id="edge6" class="edge">
+<title>P8&#45;&gt;P9</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M858.3791,-502.2231C849.836,-473.1523 833.5223,-417.6391 823.5175,-383.5939"/>
+<polygon fill="#000000" stroke="#000000" points="820.6306,-373.7704 827.7676,-382.0959 822.0404,-378.5676 823.4502,-383.3647 823.4502,-383.3647 823.4502,-383.3647 822.0404,-378.5676 819.1327,-384.6335 820.6306,-373.7704 820.6306,-373.7704"/>
+<text text-anchor="middle" x="843" y="-434.2802" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+</g>
+<!-- P10 -->
+<g id="node10" class="node">
+<title>P10</title>
+<polygon fill="#fbb4ae" stroke="#000000" points="935.5,-214.7401 932.5,-218.7401 911.5,-218.7401 908.5,-214.7401 852.5,-214.7401 852.5,-176.7401 935.5,-176.7401 935.5,-214.7401"/>
+<text text-anchor="middle" x="894" y="-199.5401" font-family="Times,serif" font-size="14.00" fill="#000000">utils</text>
+<text text-anchor="middle" x="894" y="-184.5401" font-family="Times,serif" font-size="14.00" fill="#000000">general utils</text>
+</g>
+<!-- P8&#45;&gt;P10 -->
 <g id="edge7" class="edge">
-<title>P11&#45;&gt;P13</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M1468,-357.2231C1468,-328.2776 1468,-273.1171 1468,-239.0353"/>
-<polygon fill="#000000" stroke="#000000" points="1468,-228.7704 1472.5001,-238.7704 1468,-233.7704 1468.0001,-238.7704 1468.0001,-238.7704 1468.0001,-238.7704 1468,-233.7704 1463.5001,-238.7705 1468,-228.7704 1468,-228.7704"/>
-<text text-anchor="middle" x="1470" y="-289.2802" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+<title>P8&#45;&gt;P10</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M918.3164,-502.2487C945.2105,-488.9787 972,-468.1807 972,-437.9802 972,-437.9802 972,-437.9802 972,-271.2401 972,-250.1851 957.1452,-233.1283 940.4009,-220.5899"/>
+<polygon fill="#000000" stroke="#000000" points="932.086,-214.7999 942.864,-216.8215 936.1892,-217.6572 940.2924,-220.5144 940.2924,-220.5144 940.2924,-220.5144 936.1892,-217.6572 937.7209,-224.2073 932.086,-214.7999 932.086,-214.7999"/>
+<text text-anchor="middle" x="974" y="-350.9102" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+</g>
+<!-- P9&#45;&gt;P10 -->
+<g id="edge8" class="edge">
+<title>P9&#45;&gt;P10</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M824.5292,-335.4467C838.2899,-307.7739 863.8229,-256.4267 879.8067,-224.2831"/>
+<polygon fill="#000000" stroke="#000000" points="884.437,-214.9715 884.0137,-225.9292 882.2107,-219.4486 879.9844,-223.9256 879.9844,-223.9256 879.9844,-223.9256 882.2107,-219.4486 875.9551,-221.9219 884.437,-214.9715 884.437,-214.9715"/>
+<text text-anchor="middle" x="861" y="-267.5401" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
 </g>
 <!-- P12 -->
 <g id="node12" class="node">
 <title>P12</title>
-<polygon fill="#ccebc5" stroke="#000000" points="1327,-395.3503 1324,-399.3503 1303,-399.3503 1300,-395.3503 1115,-395.3503 1115,-357.3503 1327,-357.3503 1327,-395.3503"/>
-<text text-anchor="middle" x="1221" y="-380.1503" font-family="Times,serif" font-size="14.00" fill="#000000">models</text>
-<text text-anchor="middle" x="1221" y="-365.1503" font-family="Times,serif" font-size="14.00" fill="#000000">Models used by the UI components</text>
+<polygon fill="#ccebc5" stroke="#000000" points="1641.5,-540.3503 1638.5,-544.3503 1617.5,-544.3503 1614.5,-540.3503 1418.5,-540.3503 1418.5,-502.3503 1641.5,-502.3503 1641.5,-540.3503"/>
+<text text-anchor="middle" x="1530" y="-525.1503" font-family="Times,serif" font-size="14.00" fill="#000000">components</text>
+<text text-anchor="middle" x="1530" y="-510.1503" font-family="Times,serif" font-size="14.00" fill="#000000">UI components that compose the grid</text>
+</g>
+<!-- P15 -->
+<g id="node15" class="node">
+<title>P15</title>
+<polygon fill="none" stroke="#000000" stroke-dasharray="5,2" points="1604.5,-373.6102 1601.5,-377.6102 1580.5,-377.6102 1577.5,-373.6102 1455.5,-373.6102 1455.5,-335.6102 1604.5,-335.6102 1604.5,-373.6102"/>
+<text text-anchor="middle" x="1530" y="-358.4102" font-family="Times,serif" font-size="14.00" fill="#000000">*</text>
+<text text-anchor="middle" x="1530" y="-343.4102" font-family="Times,serif" font-size="14.00" fill="#000000">(can import any folders)</text>
+</g>
+<!-- P12&#45;&gt;P15 -->
+<g id="edge9" class="edge">
+<title>P12&#45;&gt;P15</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M1530,-502.2231C1530,-473.2776 1530,-418.1171 1530,-384.0353"/>
+<polygon fill="#000000" stroke="#000000" points="1530,-373.7704 1534.5001,-383.7704 1530,-378.7704 1530.0001,-383.7704 1530.0001,-383.7704 1530.0001,-383.7704 1530,-378.7704 1525.5001,-383.7705 1530,-373.7704 1530,-373.7704"/>
+<text text-anchor="middle" x="1532" y="-434.2802" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
+</g>
+<!-- P13 -->
+<g id="node13" class="node">
+<title>P13</title>
+<polygon fill="#decbe4" stroke="#000000" points="1389,-540.3503 1386,-544.3503 1365,-544.3503 1362,-540.3503 1177,-540.3503 1177,-502.3503 1389,-502.3503 1389,-540.3503"/>
+<text text-anchor="middle" x="1283" y="-525.1503" font-family="Times,serif" font-size="14.00" fill="#000000">models</text>
+<text text-anchor="middle" x="1283" y="-510.1503" font-family="Times,serif" font-size="14.00" fill="#000000">Models used by the UI components</text>
+</g>
+<!-- P14 -->
+<g id="node14" class="node">
+<title>P14</title>
+<polygon fill="#fed9a6" stroke="#000000" points="1324.5,-373.6102 1321.5,-377.6102 1300.5,-377.6102 1297.5,-373.6102 1241.5,-373.6102 1241.5,-335.6102 1324.5,-335.6102 1324.5,-373.6102"/>
+<text text-anchor="middle" x="1283" y="-358.4102" font-family="Times,serif" font-size="14.00" fill="#000000">utils</text>
+<text text-anchor="middle" x="1283" y="-343.4102" font-family="Times,serif" font-size="14.00" fill="#000000">general utils</text>
+</g>
+<!-- P13&#45;&gt;P14 -->
+<g id="edge10" class="edge">
+<title>P13&#45;&gt;P14</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M1283,-502.2231C1283,-473.2776 1283,-418.1171 1283,-384.0353"/>
+<polygon fill="#000000" stroke="#000000" points="1283,-373.7704 1287.5001,-383.7704 1283,-378.7704 1283.0001,-383.7704 1283.0001,-383.7704 1283.0001,-383.7704 1283,-378.7704 1278.5001,-383.7705 1283,-373.7704 1283,-373.7704"/>
+<text text-anchor="middle" x="1285" y="-434.2802" font-family="Times,serif" font-size="14.00" fill="#000000"> </text>
 </g>
 </g>
 </svg>

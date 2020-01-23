@@ -131,6 +131,7 @@ The general options are:
 
 | Option          | Description                                                                          | Example                                |
 | --------------- | ------------------------------------------------------------------------------------ | -------------------------------------- |
+| disableTopCluster | Disable the automatically added top-level cluster (group). Helps if only the sub-folders are of interest. | `-disableTopCluster` |
 | help            | Shows the usage text.                                                                | `-help` or `-h`                        |
 | importBlacklist | Exclude these top-level packages from the diagram. Helps to simplify the diagram.    | `-importBlacklist=package-1,package-2` |
 | importWhitelist | Include only these top-level packages in the diagram. Helps to simplify the diagram. | `-importWhitelist=package-1,package-2` |
@@ -159,7 +160,8 @@ For working examples, see the following scripts:
 | --------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | `./generate_graph_image_example.sh`           | Basic example that generates an image from the example configuration (`./tslint.tslint-folders.json`). |
 | `./generate_graph_image_example_shapes.sh`    | Uses different kinds of shapes to draw the packages and sub-folders.                                   |
-| `./generate_graph_image_optimized_example.sh` | Uses optimization options to simplify the diagram.                                                     |
+| `./generate_graph_image_optimized_example_blacklist.sh` | Uses optimization options to simplify the diagram.                                                     |
+| `./generate_graph_image_example_whitelist.sh` | Uses a whitelist, to only show some top-level packages. Generates a separate diagram of sub-folders. |
 
 ---
 
