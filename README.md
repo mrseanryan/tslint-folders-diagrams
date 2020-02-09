@@ -14,7 +14,6 @@ tslint-folders-diagrams is stable and in use every day in CI builds and on dev b
 [![install size](https://packagephobia.now.sh/badge?p=tslint-folders-diagrams)](https://packagephobia.now.sh/result?p=tslint-folders-diagrams)
 
 [![Dependencies](https://david-dm.org/mrseanryan/tslint-folders-diagrams.svg)](https://david-dm.org/mrseanryan/tslint-folders-diagrams)
-[![Dev Dependencies](https://david-dm.org/mrseanryan/tslint-folders-diagrams/dev-status.svg)](https://david-dm.org/mrseanryan/tslint-folders-diagrams?type=dev)
 
 [![npm Package](https://img.shields.io/npm/v/tslint-folders-diagrams.svg?style=flat-square)](https://www.npmjs.org/package/tslint-folders-diagrams)
 [![NPM Downloads](https://img.shields.io/npm/dm/tslint-folders-diagrams.svg)](https://npmjs.org/package/tslint-folders-diagrams)
@@ -129,14 +128,14 @@ node node_modules/tslint-folders-diagrams/dist/lib/tslint-folders-diagrams.js <p
 
 The general options are:
 
-| Option          | Description                                                                          | Example                                |
-| --------------- | ------------------------------------------------------------------------------------ | -------------------------------------- |
-| disableTopCluster | Disable the automatically added top-level cluster (group). Helps if only the sub-folders are of interest. | `-disableTopCluster` |
-| help            | Shows the usage text.                                                                | `-help` or `-h`                        |
-| importBlacklist | Exclude these top-level packages from the diagram. Helps to simplify the diagram.    | `-importBlacklist=package-1,package-2` |
-| importWhitelist | Include only these top-level packages in the diagram. Helps to simplify the diagram. | `-importWhitelist=package-1,package-2` |
-| output          | Write the output to the given filepath, instead of using standard output.            | `-outpath=/tmp/my-file.dot`            |
-| skipSubFolders  | Exclude sub-folders from the diagram.                                                | `-skipSubFolders`                      |
+| Option            | Description                                                                                               | Example                                |
+| ----------------- | --------------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| disableTopCluster | Disable the automatically added top-level cluster (group). Helps if only the sub-folders are of interest. | `-disableTopCluster`                   |
+| help              | Shows the usage text.                                                                                     | `-help` or `-h`                        |
+| importBlacklist   | Exclude these top-level packages from the diagram. Helps to simplify the diagram.                         | `-importBlacklist=package-1,package-2` |
+| importWhitelist   | Include only these top-level packages in the diagram. Helps to simplify the diagram.                      | `-importWhitelist=package-1,package-2` |
+| output            | Write the output to the given filepath, instead of using standard output.                                 | `-outpath=/tmp/my-file.dot`            |
+| skipSubFolders    | Exclude sub-folders from the diagram.                                                                     | `-skipSubFolders`                      |
 
 The following options are specific to the `Dot` output format:
 
@@ -156,12 +155,12 @@ The following options are specific to the `Dot` output format:
 
 For working examples, see the following scripts:
 
-| Script                                        | Description                                                                                            |
-| --------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| `./generate_graph_image_example.sh`           | Basic example that generates an image from the example configuration (`./tslint.tslint-folders.json`). |
-| `./generate_graph_image_example_shapes.sh`    | Uses different kinds of shapes to draw the packages and sub-folders.                                   |
+| Script                                                  | Description                                                                                            |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| `./generate_graph_image_example.sh`                     | Basic example that generates an image from the example configuration (`./tslint.tslint-folders.json`). |
+| `./generate_graph_image_example_shapes.sh`              | Uses different kinds of shapes to draw the packages and sub-folders.                                   |
 | `./generate_graph_image_optimized_example_blacklist.sh` | Uses optimization options to simplify the diagram.                                                     |
-| `./generate_graph_image_example_whitelist.sh` | Uses a whitelist, to only show some top-level packages. Generates a separate diagram of sub-folders. |
+| `./generate_graph_image_example_whitelist.sh`           | Uses a whitelist, to only show some top-level packages. Generates a separate diagram of sub-folders.   |
 
 ---
 
