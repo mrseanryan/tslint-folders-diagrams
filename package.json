@@ -139,6 +139,7 @@
         "lodash": "^4.17.15",
         "tslint-folders": "^4.0.0"
     },
+    "funding": "https://github.com/mrseanryan/tslint-folders-diagrams?sponsor=1",
     "keywords": [
         "tslint",
         "folders",
