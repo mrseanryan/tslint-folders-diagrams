@@ -11,6 +11,3 @@ fi;
 # colorScheme value is from: https://graphviz.gitlab.io/_pages/doc/info/colors.html
 echo "-importWhitelist=todo-area,contact-area,shell,utils -skipSubFolders"
 ./_generate_graph_image.sh $GENERATE_MODE ./test/test-data/known-good-output/whitelist tslint.tslint-folders.json -subTitle="Top-level Packages [whitelist todo-area,contact-area,shell,utils] (sub title)" -title="Project Packages with whitelist (title)" -importWhitelist=todo-area,contact-area,shell,utils -skipSubFolders
-
-echo "-importWhitelist=todo-area -disableTopCluster"
-./_generate_graph_image.sh $GENERATE_MODE ./test/test-data/known-good-output/whitelist-and-sub-folders tslint.tslint-folders.json -subTitle="todo-area sub-folders [whitelist todo-area] (sub title)" -title="todo-area (title)" -importWhitelist=todo-area -disableTopCluster

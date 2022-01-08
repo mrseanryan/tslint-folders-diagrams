@@ -68,6 +68,13 @@ echo "comparing output..."
 diff_files $OUT_TEXT_PATH $PATH_TO_KNOWN_GOOD_DIR/output.txt Text
 diff_files $OUT_DOT_PATH $PATH_TO_KNOWN_GOOD_DIR/output.dot Dot
 
+if [ "${ERRORS_OCCURRED}" == "Y" ]; then
+    echo "[errors occurred]"
+    exit 1
+else
+    echo "[OK]"
+fi;
+
 # NOT outputting SVG on CI build, as Travis machine does not have 'dot' installed
 if [ "${MY_BUILD_ENV}" == "" ]; then
     echo "executing dot ..."
@@ -75,6 +82,13 @@ if [ "${MY_BUILD_ENV}" == "" ]; then
     echo "graph image is at $OUT_IMAGE_PATH"
     echo "comparing output..."
     diff_files $OUT_IMAGE_PATH $PATH_TO_KNOWN_GOOD_DIR/output.svg SVG
+    # SVG can fail just due to different ordering - so just warn
+    if [ "${ERRORS_OCCURRED}" == "Y" ]; then
+        echo "[warning - SVG difference!]"
+        ERRORS_OCCURRED="N"
+    else
+        echo "[OK]"
+    fi;
 else
     echo "[skipped] dot"
 fi;
