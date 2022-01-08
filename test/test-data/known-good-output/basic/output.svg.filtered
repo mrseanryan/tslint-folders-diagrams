@@ -14,13 +14,13 @@
 <polygon fill="#ffffff" stroke="black" points="8,-8 8,-450.96 596,-450.96 596,-8 8,-8"/>
 <text text-anchor="middle" x="302" y="-435.76" font-family="Times,serif" font-size="14.00">Top&#45;level Packages (sub title)</text>
 </g>
-<g id="clust4" class="cluster">
-<title>cluster_CO1_1</title>
-<polygon fill="#ffffff" stroke="gray" stroke-dasharray="5,2" points="39,-241.48 39,-311.22 534,-311.22 534,-241.48 39,-241.48"/>
-</g>
 <g id="clust7" class="cluster">
 <title>cluster_CO1_4</title>
 <polygon fill="#ffffff" stroke="gray" stroke-dasharray="5,2" points="115,-124.74 115,-194.48 588,-194.48 588,-124.74 115,-124.74"/>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_CO1_1</title>
+<polygon fill="#ffffff" stroke="gray" stroke-dasharray="5,2" points="39,-241.48 39,-311.22 534,-311.22 534,-241.48 39,-241.48"/>
 </g>
 <g id="clust10" class="cluster">
 <title>cluster_C2</title>
