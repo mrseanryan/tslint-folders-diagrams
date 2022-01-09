@@ -35,7 +35,7 @@ function diff_files()
     cat $old | grep -v enerated > $old_filtered
     cat $new | grep -v enerated > $new_filtered
 
-    cmp --silent $old_filtered $new_filtered || fail "File output for '$description' is not as expected!"
+    cmp --silent $old_filtered $new_filtered || fail "File output for '$description' is not as expected! - see [old]$old vs [new]$new"
 }
 
 echo yarn output to Text ...;
