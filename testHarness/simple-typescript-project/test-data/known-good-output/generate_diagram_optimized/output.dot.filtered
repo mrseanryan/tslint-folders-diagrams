@@ -37,7 +37,7 @@ digraph packages {
     labelloc = t
     
     node [shape="oval"]
-    label = "Top Level Packages"
+    label = "Top-level Packages"
     {
     P1 [label="shell
 Application Shell" fillcolor=1]
@@ -110,9 +110,15 @@ Models used by the view models" fillcolor=9]
     
     
     {
+    P10 [label="utils
+general utils" fillcolor=1]
+    }
+    
+    
+    {
     node [style=dashed]
-    P10 [label="*
-(can import any folders)" fillcolor=1]
+    P11 [label="*
+(can import any folders)" fillcolor=2]
     }
     
     
@@ -124,21 +130,27 @@ Models used by the view models" fillcolor=9]
     node [shape="folder"]
     label = "grid-package - Grid Package with no dependencies"
     {
-    P11 [label="components
-UI components that compose the grid" fillcolor=2]
+    P12 [label="components
+UI components that compose the grid" fillcolor=3]
     }
     
     
     {
-    P12 [label="models
-Models used by the UI components" fillcolor=3]
+    P13 [label="models
+Models used by the UI components" fillcolor=4]
+    }
+    
+    
+    {
+    P14 [label="utils
+general utils" fillcolor=5]
     }
     
     
     {
     node [style=dashed]
-    P13 [label="*
-(can import any folders)" fillcolor=4]
+    P15 [label="*
+(can import any folders)" fillcolor=6]
     }
     
     
@@ -150,8 +162,11 @@ Models used by the UI components" fillcolor=3]
   P5-> P2 [label=" "  ltail=cluster_C2]
   P2-> P3 [label=" " ]
   P5-> P3 [label=" "  ltail=cluster_C2]
-  P7-> P10 [label=" " ]
+  P7-> P11 [label=" " ]
   P8-> P9 [label=" " ]
-  P11-> P13 [label=" " ]
+  P8-> P10 [label=" " ]
+  P9-> P10 [label=" " ]
+  P12-> P15 [label=" " ]
+  P13-> P14 [label=" " ]
   
 }

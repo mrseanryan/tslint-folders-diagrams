@@ -137,6 +137,7 @@
                             {
                                 "description": "Utils package",
                                 "importPath": "utils",
+                                "isExternal": true,
                                 "allowedToImport": [],
                                 "subFolders": []
                             },

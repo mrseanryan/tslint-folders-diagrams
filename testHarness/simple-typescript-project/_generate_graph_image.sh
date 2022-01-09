@@ -24,8 +24,8 @@ function fail()
 
 function diff_files()
 {
-    old=$1
-    new=$2
+    new=$1
+    old=$2
     description=$3
 
     # Filter out 'generated' lines which depend on time (and for SVG, the dot tool version):
